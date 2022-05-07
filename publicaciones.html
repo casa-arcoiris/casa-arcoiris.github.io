@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Publicaciones</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/main.js"></script>
+</head>
+<body>
+
+	<header>
+		<a class="header_link_logo" href="index.html"><img src="assets/example-logo.png" class="header_logo"></a>
+		<svg tabindex="0" onclick="menu_f()" id="menu_icon" class="menu_icon" viewBox="0 0 100 80" width="40" height="40">
+  			<rect y="0" width="100" height="20" rx="8"></rect>
+  			<rect y="30" width="100" height="20" rx="8"></rect>
+  			<rect y="60" width="100" height="20" rx="8"></rect>
+		</svg>
+		<ul id="menu" class="menu_list">
+			<li><a href="index.html">Inicio</a></li>
+			<li><a href="publicaciones.html">Publicaciones</a></li>
+		</ul>
+		<ul id="menu_list-no_mobile" class="menu_list-no_mobile">
+			<li><a href="index.html">Inicio</a></li>
+			<li><a href="publicaciones.html">Publicaciones</a></li>
+		</ul>
+	</header>
+
+	<div class="space"></div>
+
+	<h1 class="div_text">Publicaciones</h1>
+
+	<div class="filter_posts">
+		<p id="openFilterBtn" tabindex="0" onclick="openFilter()">Filtrar <svg xmlns="http://www.w3.org/2000/svg" class="filter_icon" viewBox="0 0 512 512"><path d="M3.853 54.87C10.47 40.9 24.54 32 40 32H472C487.5 32 501.5 40.9 508.1 54.87C514.8 68.84 512.7 85.37 502.1 97.33L320 320.9V448C320 460.1 313.2 471.2 302.3 476.6C291.5 482 278.5 480.9 268.8 473.6L204.8 425.6C196.7 419.6 192 410.1 192 400V320.9L9.042 97.33C-.745 85.37-2.765 68.84 3.854 54.87L3.853 54.87z"/></svg></p>
+
+		<ul id="filter_list" class="filter_list">
+			<li tabindex="0" class="filterListElements" onclick="filterContent('jovenes')">Ver sólo categoría de "Jóvenes"</li>
+			<li tabindex="0" class="filterListElements" onclick="filterContent('lgbtq')">Ver sólo categoría de "LGBTQ+"</li>
+			<li tabindex="0" class="filterListElements" onclick="filterContent('trans')">Ver sólo categoría de "Trans"</li>
+			<li tabindex="0" class="filterListElements" onclick="resetFilteredContent()">Ver todas las categorías</li>
+		</ul>
+	</div>
+
+	
+
+	<div class="centered_content post-container" id="filteredList">
+
+		<a href="publicaciones/lgbtq/transgenero.html" class="post-card trans lgbtq">
+			<p>¿Transgénero?</p>
+		</a>
+
+		<a href="publicaciones/jovenes/emocionario.html" class="post-card jovenes">
+			<p>Emocionario</p>
+		</a>
+		
+		<a href="publicaciones/lgbtq/las_siglas.html" class="post-card lgbtq">
+			<p>Las siglas</p>
+		</a>
+
+	</div>
+
+	<script src="js/second.js"></script>
+</body>
+</html>

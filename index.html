@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Blog</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/main.js"></script>
+</head>
+<body>
+
+	<header>
+		<a class="header_link_logo" href="index.html"><img src="assets/example-logo.png" class="header_logo"></a>
+		<svg tabindex="0" onclick="menu_f()" id="menu_icon" class="menu_icon" viewBox="0 0 100 80" width="40" height="40">
+  			<rect y="0" width="100" height="20" rx="8"></rect>
+  			<rect y="30" width="100" height="20" rx="8"></rect>
+  			<rect y="60" width="100" height="20" rx="8"></rect>
+		</svg>
+		<ul id="menu" class="menu_list">
+			<li><a href="index.html">Inicio</a></li>
+			<li><a href="publicaciones.html">Publicaciones</a></li>
+		</ul>
+		<ul id="menu_list-no_mobile" class="menu_list-no_mobile">
+			<li><a href="index.html">Inicio</a></li>
+			<li><a href="publicaciones.html">Publicaciones</a></li>
+		</ul>
+	</header>
+
+	<div class="extra_space"></div>
+
+	<div class="div_text">
+		<h1 class="inicio">Inicio</h1>
+
+		<p>¡Hola! Te damos la bienvenida a nuestro blog <i>{inserte nombre del blog}.</i> Esperamos que tu visita sea agradable y cómoda.</p>
+
+		<div class="center_image_index">
+			<img src="assets/example-logo.png" class="images fondo" id="imagen1" oncontextmenu="return false;" draggable="false" ondragstart="return false;">
+		</div>
+
+		<h2 class="less_space inicio">Objetivo</h2>
+
+		<p>¿Cuál es nuestro objetivo? Nuestro objetivo es ayudar a jóvenes que forman parte de la comunidad LGBTQ+, brindándoles herramientas para que puedan autodescubrirse más fácilmente, identificar sus emociones, saber más sobre la comunidad LGBTQ+, etc.</p>
+
+		<div class="center_image_index">
+			<img class="lgbtq_heart reveal-text" id="lgbtq_heart" src="assets/lgbtq_heart.png" alt="Corazón con colores arcoíris" oncontextmenu="return false;" draggable="false" ondragstart="return false;">
+		</div>
+	</div>
+
+	<script src="js/second.js"></script>
+</body>
+</html>
