@@ -7,7 +7,7 @@
 			box-sizing: border-box;
 }
 
-:focus, .header_link_logo:focus-visible, .lgbtq:focus-visible, .jovenes:focus-visible, .referencias > a:focus-visible, .feeling_card:focus-visible {
+:focus, .header_link_logo:focus-visible, .lgbtq:focus-visible, .jovenes:focus-visible, .referencias > a:focus-visible, .feeling_card:focus-visible, .switch:focus-visible {
 	outline: none;
 	padding: 0;
 }
@@ -40,6 +40,7 @@ a:active:hover, a:visited:hover, a:link:hover, a:active, a:hover, a:visited, a:l
 body {
 	background: #fff;
 	font-family: 'Roboto', sans-serif;
+	transition: .8s ease;
 }
 
 header {
@@ -69,7 +70,7 @@ header.sticky ul li a {
 	color: #FFF;
 }
 
-@media (max-width: 335px){
+@media (max-width: 404px){
 	header ul#menu.menu_list {
 		visibility: visible;
 		display: block;
@@ -151,6 +152,7 @@ header ul.menu_list-no_mobile {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
+	align-items: center;
 }
 
 .header_logo {
@@ -492,12 +494,12 @@ a.post-card.hidefilteredelement {
 	transition: transform 250ms ease, box-shadow 250ms ease;
 }
 
-.post-card.lgbtq:hover, .post-card.lgbtq:focus-visible {
+.post-card.lgbtq:hover, .post-card.lgbtq:focus-visible, .post-card.trans:hover, .post-card.trans:focus-visible {
 	box-shadow: 5px 5px 20px rgb(0 0 0 / 40%), -5px -5px 20px rgb(0 0 0 / 40%);
 	transform: scale(1.010);
 }
 
-.post-card.jovenes {
+body.dark .post-card.jovenes, .post-card.jovenes {
 	color: var(--clr-neon);
 	border: var(--clr-neon) 0.125em solid;
 	padding: 0.25em 1em;
@@ -508,7 +510,7 @@ a.post-card.hidefilteredelement {
 	transition: 100ms linear, font-size 200ms linear, letter-spacing 90ms linear;
 }
 
-.post-card.jovenes:hover, .post-card.jovenes:focus-visible {
+body.dark .post-card.jovenes:hover, .post-card.jovenes:hover, body.dark .post-card.jovenes:focus-visible , .post-card.jovenes:focus-visible {
 	color: var(--clr-bg);
 	text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
 	background: var(--clr-neon);
@@ -546,11 +548,6 @@ a.post-card.hidefilteredelement {
 	transition: transform 250ms ease, box-shadow 250ms ease;
 }
 
-.post-card.trans:hover, .post-card.trans:focus-visible {
-	box-shadow: 5px 5px 20px rgb(0 0 0 / 40%), -5px -5px 20px rgb(0 0 0 / 40%);
-	transform: scale(1.010);
-}
-
 .post-title h1 {
 	margin: 0;
 	width: 80%;
@@ -567,6 +564,7 @@ a.post-card.hidefilteredelement {
 	margin: 0 15% 5%;
 	border-radius: 8px;
 	padding: 6vh 5%;
+	transition: background .8s ease;
 }
 
 @media (max-width: 480px) {
@@ -592,6 +590,7 @@ a.post-card.hidefilteredelement {
 	background-size: 100% 95vh;
 	background-attachment: fixed;
 	background-position-y: 100px;
+	transition: .8s ease, background-position-y 0s;
 }
 
 .trans_post-bg::before {
@@ -619,7 +618,7 @@ a.post-card.hidefilteredelement {
 	z-index: -1;
 	position: absolute;
 	top: 0;
-	left: -150%;
+	left: -160%;
 	background: linear-gradient(to bottom right, #ff3d49, #ff8d00, #ffdf00, #009b3c, #006cb9, #842288);
 	filter: blur(5px);
 	-moz-user-select: none;
@@ -634,7 +633,7 @@ a.post-card.hidefilteredelement {
 
 @keyframes HeaderRainbowMove {
 	from {
-		left: -150%;
+		left: -160%;
 	}
 
 	to {
@@ -701,7 +700,7 @@ a.post-card.hidefilteredelement {
 	z-index: -1;
 	position: absolute;
 	top: 0;
-	left: -150%;
+	left: -160%;
 	background-repeat: no-repeat;
 	background-image: url('../assets/opacity_25.png'), url(../assets/trans_flag.jpg);
 	background-size: 100% 100%;
@@ -833,7 +832,7 @@ p.post_image-small {
 	color: #000;
 	background-repeat: no-repeat;
 	background-image: url(../assets/trans_flag.jpg);
-	background-size: 100% 100%;
+	background-size: 101% 100%;
 }
 
 .feeling_btns {
@@ -942,4 +941,93 @@ p.post_image-small {
 	font-weight: bold;
 	font-size: 120%;
 	margin: 1.5vh 0;
+}
+
+body.dark {
+	background: #111;
+	color: #fff;
+}
+
+body.dark header, body.dark header ul#menu.menu_list, body.dark .filter_posts > p, body.dark .filter_list > li {
+	background: #222;
+}
+
+body.dark .filter_posts > p:hover, body.dark .filter_posts > p:focus-visible, body.dark .filter_list > li:hover, body.dark .filter_list > li:focus-visible {
+	background: #323232;
+}
+
+body.dark .post-card {
+	box-shadow: 2px 4px 5px 0 #666, -1px -1px 5px 0 #666;
+}
+
+body.dark .post-card.lgbtq:hover, body.dark .post-card.lgbtq:focus-visible, body.dark .post-card.trans:hover, body.dark .post-card.trans:focus-visible {
+	box-shadow: 5px 5px 20px rgb(153 153 153 / 40%), -5px -5px 20px rgb(153 153 153 / 40%);
+}
+
+body.dark .post-bg {
+	background: #222;
+}
+
+.switch {
+  margin: 2.5px 15px;
+  background: #343D5B;
+  border-radius: 1000px;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  outline: none;
+}
+
+.switch::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  background: #F1F1F1;
+  top: 0;
+  left: 0;
+  right: unset;
+  border-radius: 100px;
+  -webkit-transition: .1s ease all;
+  transition: .1s ease all;
+  -webkit-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+i.sun, i.moon {
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sun > svg {
+  height: 18px;
+}
+
+.moon > svg {
+  height: 18px;
+}
+
+.switch.active {
+  background: orange;
+  color: #000;
+}
+
+.switch.active::after {
+  transform: translateX(100%);
+}
+
+.switch span {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  display: block;
+  background: none;
+  color: #fff;
 }
