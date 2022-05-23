@@ -192,7 +192,7 @@ header ul.menu_list-no_mobile {
 
 .menu_list {
 	transform: translateX(120%);
-	transition: all .5s ease;
+	transition: .5s ease, .8s background-color;
 }
 
 .menu_list.active_menu {
@@ -540,12 +540,17 @@ body.dark .post-card.jovenes:hover, .post-card.jovenes:hover, body.dark .post-ca
 	opacity: 1;
 }
 
-.post-card.trans {
+.post-card.trans, .post-card.bisexual {
 	background-image: url(../assets/trans_flag.jpg);
 	background-size: 100% 25.5vh;
 	color: #000;
 	font-weight: bold;
 	transition: transform 250ms ease, box-shadow 250ms ease;
+}
+
+.post-card.bisexual {
+	background-image: url(../assets/bisexual_flag.png);
+	color: #fff;
 }
 
 .post-title h1 {
