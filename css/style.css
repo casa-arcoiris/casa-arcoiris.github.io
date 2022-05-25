@@ -42,6 +42,35 @@ a:active:hover, a:visited:hover, a:link:hover, a:active, a:hover, a:visited, a:l
 	--website-color: #00aeff;
 }
 
+.error_404 {
+	width: 100%;
+	height: 50vh;
+	display: flex;
+	text-align: center;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+.btn-back_to_index {
+	margin: 2vh 0 0 0;
+	position: relative;
+	display: block;
+	padding: 0.75% 1.5%;
+	border: 2px solid var(--website-color);
+	color: var(--website-color);
+	text-decoration: none;
+	cursor: pointer;
+	transition: .6s;
+}
+
+.btn-back_to_index:hover, .btn-back_to_index:focus-visible {
+	outline: none;
+	background: var(--website-color);
+	color: #fff;
+}
+
 body {
 	background: #fff;
 	font-family: 'Roboto', sans-serif;
