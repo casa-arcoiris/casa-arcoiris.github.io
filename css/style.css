@@ -27,6 +27,11 @@ a:active:hover, a:visited:hover, a:link:hover, a:active, a:hover, a:visited, a:l
 	color: #fff;
 }
 
+.referencias > a::selection {
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: white;
+}
+
 :root {
 	/*Morado*/
 	/*--clr-neon: hsl(317 100% 54%);
@@ -482,7 +487,6 @@ a.post-card.hidefilteredelement {
 }
 
 .post-card > p {
-	/*font-size: 1.5rem;*/
 	font-size: 3.65vh;
 	text-align: center;
 }
@@ -540,7 +544,7 @@ body.dark .post-card.jovenes:hover, .post-card.jovenes:hover, body.dark .post-ca
 	opacity: 1;
 }
 
-.post-card.trans, .post-card.bisexual {
+.post-card.trans, .post-card.bisexual, .post-card.gay {
 	background-image: url(../assets/trans_flag.jpg);
 	background-size: 100% 25.5vh;
 	color: #000;
@@ -551,6 +555,10 @@ body.dark .post-card.jovenes:hover, .post-card.jovenes:hover, body.dark .post-ca
 .post-card.bisexual {
 	background-image: url(../assets/bisexual_flag.png);
 	color: #fff;
+}
+
+.post-card.gay {
+	background-image: url(../assets/gay_men_flag.jpg);
 }
 
 .post-title h1 {
@@ -595,7 +603,7 @@ body.dark .post-card.jovenes:hover, .post-card.jovenes:hover, body.dark .post-ca
 	background-size: 100% 95vh;
 	background-attachment: fixed;
 	background-position-y: 100px;
-	transition: .8s ease, background-position-y 0s;
+	transition: background .8s ease, background-position-y .01s, background-size .1s;
 }
 
 .trans_post-bg::before {
@@ -615,6 +623,15 @@ body.dark .post-card.jovenes:hover, .post-card.jovenes:hover, body.dark .post-ca
 	background-size: 100% 112vh;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
+}
+
+.gay_post-bg {
+	background: url(../assets/gay_men_flag.jpg);
+	background-size: 100% 85vh;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position-y: 15vh;
+	transition: background .8s ease, background-position-y .01s, background-size .1s;
 }
 
 .header_rainbow {
@@ -699,7 +716,7 @@ body.dark .post-card.jovenes:hover, .post-card.jovenes:hover, body.dark .post-ca
 	}
 }
 
-.header_trans, .header_bisexual {
+.header_trans, .header_bisexual, .header_gay {
 	height: 100%;
 	width: 150%;
 	z-index: -1;
@@ -722,7 +739,13 @@ body.dark .post-card.jovenes:hover, .post-card.jovenes:hover, body.dark .post-ca
 	background-repeat: no-repeat;
 }
 
-.header_trans.action, .header_bisexual.action {
+.header_gay {
+	background: url('../assets/opacity_25.png'), url('../assets/gay_men_flag.jpg');
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.header_trans.action, .header_bisexual.action, .header_gay.action {
 	animation: HeaderRainbowMove 1s linear;
 }
 
@@ -786,6 +809,10 @@ p.post_image-small {
 	transform: scale(.9);
 }
 
+.recursos {
+	margin: 5vh 0 2vh 0;
+}
+
 .published {
 	display: flex;
 	align-content: center;
@@ -841,7 +868,7 @@ p.post_image-small {
 	background: var(--clr-bg);
 }
 
-.categoria_post.trans, .categoria_post.bisexual {
+.categoria_post.trans, .categoria_post.bisexual, .categoria_post.gay {
 	font-weight: bold;
 	color: #000;
 	background-repeat: no-repeat;
@@ -853,6 +880,11 @@ p.post_image-small {
 	background-image: url(../assets/bisexual_flag.png);
 	background-size: 101% 100%;
 	color: #fff;
+}
+
+.categoria_post.gay {
+	background-image: url(../assets/gay_men_flag.jpg);
+	background-size: 101% 100%;
 }
 
 .feeling_btns {
@@ -995,8 +1027,6 @@ body.dark .post-bg {
   border: none;
   position: relative;
   cursor: pointer;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   outline: none;
 }

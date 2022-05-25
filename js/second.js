@@ -9,6 +9,7 @@ const HeaderRainbow = document.getElementById('header_rainbow');
 const HeaderNeon = document.getElementById('header_neon');
 const HeaderTrans = document.getElementById('header_trans');
 const HeaderBisexual = document.getElementById('header_bisexual');
+const HeaderGay = document.getElementById('header_gay');
 
 var eachEmotion = document.querySelectorAll('.feeling_card');
 
@@ -102,6 +103,13 @@ if (HeaderBisexual) {
 		moveHeaderRight(HeaderBisexual);
 	}, 1000);
 	setInterval(moveHeaderRight(HeaderBisexual), 300*1000)
+}
+
+if (HeaderGay) {
+	setTimeout(function() {
+		moveHeaderRight(HeaderGay);
+	}, 1000);
+	setInterval(moveHeaderRight(HeaderGay), 300*1000)
 }
 
 
