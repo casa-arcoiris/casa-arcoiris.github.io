@@ -53,6 +53,17 @@ a:active:hover, a:visited:hover, a:link:hover, a:active, a:hover, a:visited, a:l
 	justify-content: center;
 }
 
+.error_404 h1 {
+	text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
+	color: var(--clr-neon);
+	animation: flickerText 3s infinite alternate;
+	margin: 0 0 1vh 0;
+}
+
+.error_404-p {
+	margin: 3vh 0 0 0;
+}
+
 .btn-back_to_index {
 	margin: 2vh 0 0 0;
 	position: relative;
