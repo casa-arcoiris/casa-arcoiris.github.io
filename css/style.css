@@ -771,10 +771,19 @@ p.post_image-small {
 	word-break: break-all;
 	font-size: 110%;
 	width: fit-content;
+	background: linear-gradient(to right, #ff3d49, #ff8d00, #ffdf00, #009b3c, #006cb9, #842288);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-weight: bold;
+	transition: all 0.25s ease-in-out;
 }
 
 .referencias > a:hover, .referencias > a:focus-visible {
-	text-decoration: underline;
+	transform: scale(1.025);
+}
+
+.referencias > a:active {
+	transform: scale(.9);
 }
 
 .published {
@@ -832,12 +841,18 @@ p.post_image-small {
 	background: var(--clr-bg);
 }
 
-.categoria_post.trans {
+.categoria_post.trans, .categoria_post.bisexual {
 	font-weight: bold;
 	color: #000;
 	background-repeat: no-repeat;
 	background-image: url(../assets/trans_flag.jpg);
 	background-size: 101% 100%;
+}
+
+.categoria_post.bisexual {
+	background-image: url(../assets/bisexual_flag.png);
+	background-size: 101% 100%;
+	color: #fff;
 }
 
 .feeling_btns {
