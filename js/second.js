@@ -165,10 +165,18 @@ if (eachEmotion) {
 
 
 function openFilter() {
-	filter_list.classList.toggle('active');
-	setTimeout(function(){
+	if (filter_list.classList.contains('active')) {
 		filter_list.classList.toggle('inside');
-	}, 0.1);
+		setTimeout(function(){
+			filter_list.classList.toggle('active');
+		}, 500);
+	}
+	else {
+		filter_list.classList.toggle('active');
+		setTimeout(function(){
+			filter_list.classList.toggle('inside');
+		}, 0.1);
+	}
 }
 
 function filterContent(activeClass) {

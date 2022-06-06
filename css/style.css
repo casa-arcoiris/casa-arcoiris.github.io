@@ -33,10 +33,6 @@ a:active:hover, a:visited:hover, a:link:hover, a:active, a:hover, a:visited, a:l
 }
 
 :root {
-	/*Morado*/
-	/*--clr-neon: hsl(317 100% 54%);
-	--clr-bg: hsl(323 21% 16%);*/
-	/*Azul*/
 	--clr-neon: hsl(199deg 100% 50%);
 	--clr-bg: hsl(199deg 100% 10%);
 	--website-color: #00aeff;
@@ -445,6 +441,7 @@ footer > p {
 	display: flex;
 	justify-content: flex-start;
 	flex-direction: column;
+	position: relative;
 }
 
 .filter_posts > p {
@@ -480,6 +477,9 @@ footer > p {
 	transform: translateY(-2.5%);
 	opacity: 0;
 	transition: visibility 0s, opacity 0.5s, all .55s ease;
+	position: absolute;
+	top: 32pt; 
+	z-index: 2;
 }
 
 .filter_list.active {
