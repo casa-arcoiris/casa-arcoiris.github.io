@@ -3,6 +3,8 @@ const imagen1 = document.getElementById('imagen1');
 const menu_icon = document.getElementById('menu_icon');
 const menu = document.getElementById('menu');
 
+const close_element = document.getElementById('close_element');
+
 const lgbtq_heart = document.getElementById('lgbtq_heart');
 
 const HeaderRainbow = document.getElementById('header_rainbow');
@@ -46,6 +48,7 @@ if (imagen1) {
 }
 
 function menu_f(){
+	close_element.classList.toggle('active');
 	menu.classList.toggle('active_menu');
 	menu_icon.classList.toggle('cross');
 }
@@ -56,7 +59,6 @@ menu_icon.addEventListener("keyup", function(event) {
 		menu_f();
 	}
 });
-
 
 copyright.innerHTML = 'Casa Arcoíris - ' + new Date().getFullYear() + ' Copyright &copy;. Todos los derechos reservados';
 
@@ -165,6 +167,7 @@ if (eachEmotion) {
 
 
 function openFilter() {
+	close_element.classList.toggle('active');
 	if (filter_list.classList.contains('active')) {
 		filter_list.classList.toggle('inside');
 		setTimeout(function(){
@@ -220,5 +223,18 @@ if (filter_list) {
 				element.click();
 			}
 		});
+	});
+}
+
+if (close_element) {
+	close_element.addEventListener('click', () => {
+		if (close_element.classList.contains('active')) {
+			if (filter_list.classList.contains('active')) {
+				openFilter();
+			}
+			if (menu.classList.contains('active_menu')) {
+				menu_f();
+			}
+		}
 	});
 }
