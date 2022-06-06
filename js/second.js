@@ -17,6 +17,8 @@ const filter_list = document.getElementById('filter_list');
 var filterListElements = document.querySelectorAll('.filterListElements');
 const filteredList = document.getElementById('filteredList');
 
+const copyright = document.querySelector('.copyright');
+
 const cargarImagen = (entradas, observador) => {
 	entradas.forEach((entrada) => {
 		if(entrada.isIntersecting){
@@ -55,6 +57,8 @@ menu_icon.addEventListener("keyup", function(event) {
 	}
 });
 
+
+copyright.innerHTML = 'Casa Arcoíris - ' + new Date().getFullYear() + ' Copyright &copy;. Todos los derechos reservados';
 
 if (lgbtq_heart){
 	observador.observe(lgbtq_heart);
