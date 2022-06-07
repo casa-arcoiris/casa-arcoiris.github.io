@@ -78,18 +78,15 @@ a:active:hover, a:visited:hover, a:link:hover, a:active, a:hover, a:visited, a:l
 	color: #fff;
 }
 
-html.publicaciones_html {
-	min-height: 100vh;
-}
-
 body {
 	background: #fff;
 	font-family: 'Roboto', sans-serif;
 	transition: .8s ease;
 }
 
-body.publicaciones_body {
-	height: 100%;
+body.publicaciones_body > footer {
+	position: absolute;
+	bottom: 0;
 }
 
 header {
