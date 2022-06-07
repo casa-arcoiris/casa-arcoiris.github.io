@@ -129,11 +129,6 @@ header.sticky ul li a {
 		display: none;
 		opacity: 0;
 	}
-
-	body.publicaciones_body > footer {
-		position: absolute;
-		bottom: 0;
-	}
 }
 
 header ul#menu {
