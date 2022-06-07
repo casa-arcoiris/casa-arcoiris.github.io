@@ -79,7 +79,7 @@ a:active:hover, a:visited:hover, a:link:hover, a:active, a:hover, a:visited, a:l
 }
 
 html.publicaciones_html {
-	min-height: 100%;
+	min-height: 100vh;
 }
 
 body {
