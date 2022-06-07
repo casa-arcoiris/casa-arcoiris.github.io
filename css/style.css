@@ -93,7 +93,7 @@ header {
   justify-content: space-between;
   align-items: center;
   transition: .8s ease;
-  padding: 40px 2%;
+  padding: 40px 3%;
   background: var(--website-color);
   z-index: 3;
   flex-wrap: nowrap;
