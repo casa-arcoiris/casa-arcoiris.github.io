@@ -104,14 +104,14 @@ header {
 }
 
 header.sticky {
-	padding: 10px 2%;
+	padding: 10px 3%;
 }
 
 header.sticky ul li a {
 	color: #FFF;
 }
 
-@media (max-width: 404px){
+@media (max-width: 413px){
 	header ul#menu.menu_list {
 		visibility: visible;
 		display: block;
