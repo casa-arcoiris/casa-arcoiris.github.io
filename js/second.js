@@ -19,6 +19,8 @@ const filter_list = document.getElementById('filter_list');
 var filterListElements = document.querySelectorAll('.filterListElements');
 const filteredList = document.getElementById('filteredList');
 
+var drawPost = document.querySelectorAll('.draw');
+
 const copyright = document.querySelector('.copyright');
 
 const cargarImagen = (entradas, observador) => {
@@ -236,5 +238,11 @@ if (close_element) {
 				menu_f();
 			}
 		}
+	});
+}
+
+if (drawPost) {
+	drawPost.forEach(function(image, index) {
+		observador.observe(image);
 	});
 }

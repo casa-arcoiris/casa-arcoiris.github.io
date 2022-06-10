@@ -522,11 +522,10 @@ a.post-card.hidefilteredelement {
 .post-card {
 	box-shadow: 2px 4px 5px 0 #bdbdbd, -1px -1px 5px 0 #bdbdbd;
 	height: 25vh;
-	width: 45vh;
+	width: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	margin: 1.5vh;
 	border-radius: 0.25em;
 	z-index: 1;
 }
@@ -546,6 +545,111 @@ a.post-card.hidefilteredelement {
 .post-card.lgbtq:hover, .post-card.lgbtq:focus-visible, .post-card.trans:hover, .post-card.trans:focus-visible {
 	box-shadow: 5px 5px 20px rgb(0 0 0 / 40%), -5px -5px 20px rgb(0 0 0 / 40%);
 	transform: scale(1.010);
+}
+
+.post-card_container {
+	width: 49vh;
+	padding: 2vh;
+	margin: 1.5vh;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	align-items: center;
+	position: relative;
+}
+
+.post_description {
+	margin: 1.5vh 0 0 0;
+	font-size: 100%;
+	z-index: 1;
+}
+
+.draw {
+  transition: color 0.25s;
+}
+
+.draw::before, .draw::after {
+	content: '';
+	border: 2px solid transparent;
+	width: 0;
+	height: 0;
+	position: absolute;
+}
+
+.draw::before {
+	top: 0;
+	left: 0;
+}
+
+.draw::after {
+	bottom: 0;
+	right: 0;
+}
+
+.draw.inside {
+	color: var(--website-color);
+}
+
+.draw.inside::before, .draw.inside::after {
+	width: 98.35%;
+	height: 99.3%;
+	border-radius: 0.25em;
+}
+
+.draw.inside::before {
+	border-top-color: var(--website-color);
+	border-right-color: var(--website-color);
+	transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+}
+
+.draw.inside::after {
+  border-bottom-color: var(--website-color);
+  border-left-color: var(--website-color);
+  transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
+}
+
+.go_to_post-btn {
+	position: relative;
+	display: block;
+	padding: 0.5% 3.5%;
+	border: 2px solid #00aeff;
+	text-transform: uppercase;
+	color: #00aeff;
+	text-decoration: none;
+	cursor: pointer;
+	transition: .8s ease;
+	background-image: linear-gradient(#00aeff,#00aeff);
+	background-size: 0 100%;
+	background-repeat: no-repeat;
+	z-index: 1;
+	margin: 1.5vh 0 0 0;
+	text-align: center;
+	font-size: 85%;
+}
+
+.go_to_post-btn:hover {
+	color: #fff;
+	background-size: 100% 100%;
+}
+
+.categorias_post.categorias_post-cards {
+	width: 100%;
+}
+
+.categorias_post > .categoria_post-card.categoria_post {
+	margin: 0 1vh 1vh 0;
+	width: fit-content;
+	padding: 1rem 1.5rem;
+	font-size: .66rem;
+}
+
+.published.card > * {
+	font-size: 100%;
+}
+
+.published.card {
+	margin: 1vh 0 0 0;
+	width: 100%;
 }
 
 body.dark .post-card.jovenes, .post-card.jovenes {
