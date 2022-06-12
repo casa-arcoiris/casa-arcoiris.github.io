@@ -231,10 +231,10 @@ if (filter_list) {
 if (close_element) {
 	close_element.addEventListener('click', () => {
 		if (close_element.classList.contains('active')) {
-			if (filter_list.classList.contains('active')) {
+			if (filter_list && filter_list.classList.contains('active')) {
 				openFilter();
 			}
-			if (menu.classList.contains('active_menu')) {
+			if (menu && menu.classList.contains('active_menu')) {
 				menu_f();
 			}
 		}
