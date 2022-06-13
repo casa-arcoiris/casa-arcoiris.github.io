@@ -641,6 +641,7 @@ a.post-card.hidefilteredelement {
 	width: fit-content;
 	padding: 1rem 1.5rem;
 	font-size: .66rem;
+	border: none;
 }
 
 .published.card > * {
@@ -910,7 +911,7 @@ body.dark .post-card.jovenes:hover, .post-card.jovenes:hover, body.dark .post-ca
 	margin: 0 0 3vh 0;
 }
 
-.list_siglas {
+.list_publicacion {
 	margin: 0 0 0 5vh;
 }
 
