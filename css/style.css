@@ -129,6 +129,39 @@ header.sticky ul li a {
 		display: none;
 		opacity: 0;
 	}
+
+	div.phone_section {
+		display: block;
+		visibility: visible;
+		opacity: 1;
+	}
+}
+
+.phone_section {
+	margin: 2vh 0 0 0;
+	display: none;
+	visibility: hidden;
+	opacity: 0;
+}
+
+.frame {
+	margin: 2vh 0 0 0;
+	border: 1px solid #343D5B;
+	padding: 19px 22px;
+	border-radius: 8px;
+	align-items: center;
+	flex-direction: column;
+	height: 31em;
+	background-position-y: -1.45em;
+	object-fit: contain;
+	background-image: url(../assets/light_mode_menu.gif);
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+body.dark .frame {
+	border: 1px solid #333;
+	background-image: url('../assets/dark_mode_menu.gif');
 }
 
 header ul#menu {
