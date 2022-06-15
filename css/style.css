@@ -7,7 +7,7 @@
 			box-sizing: border-box;
 }
 
-:focus, .header_link_logo:focus-visible, .lgbtq:focus-visible, .jovenes:focus-visible, .referencias > a:focus-visible, .feeling_card:focus-visible, .switch:focus-visible {
+:focus, .header_link_logo:focus-visible, .lgbtq:focus-visible, .jovenes:focus-visible, .referencias > a:focus-visible, .feeling_card:focus-visible, .switch:focus-visible, footer a:focus-visible {
 	outline: none;
 	padding: 0;
 }
@@ -501,7 +501,7 @@ footer > p {
 	transition: .5s ease-in-out;
 }
 
-a.post-card.hidefilteredelement {
+.post-card_container.hidefilteredelement {
 	visibility: hidden;
 	display: none;
 	opacity: 0;
@@ -627,9 +627,11 @@ a.post-card.hidefilteredelement {
 	font-size: 85%;
 }
 
-.go_to_post-btn:hover {
+.go_to_post-btn:hover, .go_to_post-btn:focus-visible {
 	color: #fff;
 	background-size: 100% 100%;
+	outline: none;
+	padding: 0.5% 3.5%;
 }
 
 .categorias_post.categorias_post-cards {

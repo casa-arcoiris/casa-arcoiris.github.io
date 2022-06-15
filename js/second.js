@@ -17,7 +17,7 @@ var eachEmotion = document.querySelectorAll('.feeling_card');
 
 const filter_list = document.getElementById('filter_list');
 var filterListElements = document.querySelectorAll('.filterListElements');
-const filteredList = document.getElementById('filteredList');
+var filteredList = document.querySelectorAll('.post-card_container')
 
 var drawPost = document.querySelectorAll('.draw');
 
@@ -186,12 +186,12 @@ function openFilter() {
 
 function filterContent(activeClass) {
 	resetFilteredContent();
-	var filterListLength = filteredList.children.length;
+	var filterListLength = filteredList.length;
 	let i = 0;
 	while (i <= filterListLength - 1) {
-		var child = filteredList.children[i];
+		var child = filteredList[i].children[0];
 		if (!child.classList.contains(activeClass)) {
-			child.classList.add('hidefilteredelement');
+			filteredList[i].classList.add('hidefilteredelement');
 		}
 		i++;
 	}
@@ -199,12 +199,12 @@ function filterContent(activeClass) {
 
 function resetFilteredContent() {
 	openFilter();
-	var filterListLength = filteredList.children.length;
+	var filterListLength = filteredList.length;
 	let i = 0;
 	while (i <= filterListLength - 1) {
-		var child = filteredList.children[i];
-		if (child.classList.contains('hidefilteredelement')) {
-			child.classList.remove('hidefilteredelement');
+		var child = filteredList[i].children[0];
+		if (filteredList[i].classList.contains('hidefilteredelement')) {
+			filteredList[i].classList.remove('hidefilteredelement');
 		}
 		i++;
 	}
