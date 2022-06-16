@@ -154,14 +154,14 @@ header.sticky ul li a {
 	height: 31em;
 	background-position-y: -1.45em;
 	object-fit: contain;
-	background-image: url('https://www.casa-arcoiris.github.io/assets/light_mode_menu.gif');
+	background-image: url('https://www.casa-arcoiris.org/assets/light_mode_menu.gif');
 	background-repeat: no-repeat;
 	background-size: 100%;
 }
 
 body.dark .frame {
 	border: 1px solid #333;
-	background-image: url('https://www.casa-arcoiris.github.io/assets/dark_mode_menu.gif');
+	background-image: url('https://www.casa-arcoiris.org/assets/dark_mode_menu.gif');
 }
 
 header ul#menu {
