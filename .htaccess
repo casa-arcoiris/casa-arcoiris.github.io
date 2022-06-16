@@ -1,1 +1,7 @@
 Redirect 301 / https://www.casa-arcoiris.org/
+
+Options +FollowSymLinks
+RewriteEngine On
+RewriteBase /
+RewriteCond %{HTTP_HOST} ^OLDDOMAIN\.com$ [NC]
+RewriteRule ^(.*)$ https://NEWDOMAIN.com [R=301,L]
