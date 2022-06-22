@@ -7,6 +7,7 @@ const close_element = document.getElementById('close_element');
 
 const lgbtq_heart = document.getElementById('lgbtq_heart');
 
+const HeaderNeon = document.getElementById('header_neon');
 const HeaderMovingRight = document.querySelector('#header_moving_right');
 
 var eachEmotion = document.querySelectorAll('.feeling_card');
