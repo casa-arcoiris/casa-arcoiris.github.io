@@ -7,13 +7,6 @@ const close_element = document.getElementById('close_element');
 
 const lgbtq_heart = document.getElementById('lgbtq_heart');
 
-const HeaderRainbow = document.getElementById('header_rainbow');
-const HeaderNeon = document.getElementById('header_neon');
-const HeaderTrans = document.getElementById('header_trans');
-const HeaderBisexual = document.getElementById('header_bisexual');
-const HeaderGay = document.getElementById('header_gay');
-const HeaderAromantic = document.getElementById('header_aromantic');
-
 const HeaderMovingRight = document.querySelector('#header_moving_right');
 
 var eachEmotion = document.querySelectorAll('.feeling_card');
