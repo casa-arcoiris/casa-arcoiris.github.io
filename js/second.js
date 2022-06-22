@@ -12,6 +12,9 @@ const HeaderNeon = document.getElementById('header_neon');
 const HeaderTrans = document.getElementById('header_trans');
 const HeaderBisexual = document.getElementById('header_bisexual');
 const HeaderGay = document.getElementById('header_gay');
+const HeaderAromantic = document.getElementById('header_aromantic');
+
+const HeaderMovingRight = document.querySelector('#header_moving_right');
 
 var eachEmotion = document.querySelectorAll('.feeling_card');
 
@@ -76,14 +79,12 @@ function moveHeaderRight(element) {
 	}, 2000);
 }
 
-if (HeaderRainbow) {
+if (HeaderMovingRight) {
 	setTimeout(function(){
-		moveHeaderRight(HeaderRainbow);
+		moveHeaderRight(HeaderMovingRight);
 	}, 1000);
-	setInterval(moveHeaderRight(HeaderRainbow), 300*1000);
+	setInterval(moveHeaderRight(HeaderMovingRight), 300*1000);
 }
-
-
 
 function actionHeaderNeon() {
 	HeaderNeon.classList.add('action');
@@ -97,27 +98,6 @@ if (HeaderNeon) {
 		actionHeaderNeon();
 	}, 1000);
 	setInterval(actionHeaderNeon, 300*1000);
-}
-
-if (HeaderTrans) {
-	setTimeout(function() {
-		moveHeaderRight(HeaderTrans);
-	}, 1000);
-	setInterval(moveHeaderRight(HeaderTrans), 300*1000)
-}
-
-if (HeaderBisexual) {
-	setTimeout(function() {
-		moveHeaderRight(HeaderBisexual);
-	}, 1000);
-	setInterval(moveHeaderRight(HeaderBisexual), 300*1000)
-}
-
-if (HeaderGay) {
-	setTimeout(function() {
-		moveHeaderRight(HeaderGay);
-	}, 1000);
-	setInterval(moveHeaderRight(HeaderGay), 300*1000)
 }
 
 
@@ -245,4 +225,8 @@ if (drawPost) {
 	drawPost.forEach(function(image, index) {
 		observador.observe(image);
 	});
+}
+
+function goToSection(id) {
+	document.getElementById(id).scrollIntoView();
 }
