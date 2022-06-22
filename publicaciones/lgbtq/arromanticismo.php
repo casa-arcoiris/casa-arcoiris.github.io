@@ -2,19 +2,19 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
-	<meta name="description" content="Probablemente has escuchado que algún hombre dice que es 'gay', pero ¿Qué tanto sabes sobre éste término? ¡Aquí te respondemos tus dudas!">
-	<meta name="keywords" content="casa, arcoíris, comunidad, lgbtq, casa arcoíris, comunidad lgbtq, gay, hombres gays, bandera representando a la comunidad de hombres gays">
+	<meta name="description" content="¿Alguna vez has escuchado a una persona decir que es arromántica pero no sabes qué quiere decir? ¡Aquí te aclaramos algunas dudas!">
+	<meta name="keywords" content="casa, arcoíris, comunidad, lgbtq, casa arcoíris, comunidad lgbtq, arromántica, arromanticismo, arromántico">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>¿Gay? | Casa Arcoíris</title>
-	<link rel="stylesheet" href="https://www.casa-arcoiris.org/css/style.css">
+	<title>¿Arromanticismo? | Casa Arcoíris</title>
+	<link rel="stylesheet" href="../../css/style.css">
 	<script src="https://www.casa-arcoiris.org/js/main.js"></script>
 	<link rel="shortcut icon" href="https://www.casa-arcoiris.org/assets/favicon.png" type="image/x-icon">
 	<link rel="apple-touch-icon" href="https://www.casa-arcoiris.org/assets/favicon.png">
 </head>
-<body class="gay_post-bg">
+<body class="aromantic_post-bg">
 
 	<header>
-		<div class="header_gay" id="header_moving_right"></div>
+		<div class="header_aromantic" id="header_moving_right"></div>
 		<a class="header_link_logo" href="https://www.casa-arcoiris.org"><img src="https://www.casa-arcoiris.org/assets/casa_arcoiris_logo.png" class="header_logo" alt="Logo de Casa Arcoíris"></a>
 		<svg tabindex="0" onclick="menu_f()" id="menu_icon" class="menu_icon" viewBox="0 0 100 80" width="40" height="40">
   			<rect y="0" width="100" height="20" rx="8"></rect>
@@ -76,80 +76,65 @@
 	<div itemscope itemtype="http://schema.org/Article" class="post-bg">
 
 		<div class="post_text">
-			<h1 itemprop="name">¿Gay?</h1>
+			<h1 itemprop="name">¿Arromanticismo?</h1>
 
-			<p>Probablemente has escuchado que algún hombre dice que salió del clóset como "gay", pero ¿Qué tanto sabes sobre éste término?</p>
+			<p>¿Alguna vez has escuchado a una persona decir que es arromántica pero no sabes qué quiere decir? ¡Aquí te aclaramos algunas dudas!</p>
 
-			<img itemprop="image" class="post_image" src="https://www.casa-arcoiris.org/assets/gay_men_flag.jpg" alt="Bandera representando a la comunidad de hombres gays">
-			<p class="post_image-small">Bandera representando a la comunidad de hombres gays</p>
+			<img itemprop="image" class="post_image" src="https://www.casa-arcoiris.org/assets/aromantic_flag.jpg" alt="Banderas representando a la comunidad arromántica">
+			<p class="post_image-small">Banderas representando a la comunidad arromántica</p>
 
 			<span itemprop="articleBody">
+				<h2>¿Qué significa ser un persona arromántica?</h2>
 
-				<h2>¿Qué es ser gay?</h2>
+				<p>Una persona arromántica es alguien que no siente atracción romántica.</p>
 
-				<p>Un hombre gay es alguien que siente atracción romántica o sexual hacia otros hombres.</p>
+				<h2>¿Las personas arrománticas son incapaces de amar?</h2>
 
-				<h2>¿Los hombres gays son promiscuos e infieles?</h2>
+				<p>Sí. Las personas arrománticas sí son capaces de amar, pero de una manera afectiva, como el amor filial, el amor platónico o el amor fraternal.</p>
 
-				<p>Ser gay es diferente a ser una persona promiscua. La orientación sexual no tiene nada que ver con la promiscuidad.</p>
+				<h2>¿Las personas arrománticas tienen emociones?</h2>
 
-				<p>De la misma manera, ser gay no está de la mano con ser infiel. La orientación sexual tampoco tiene que ver con la infidelidad.</p>
+				<p>Sí. Las personas arrománticas tienen emociones, no son personas frías o sin corazón. Pueden sentir <a onclick="goToSection('arrobamiento')" class="same_page_link" tabindex="0">arrobamiento</a>.</p>
 
-				<h2>Si un hombre es gay ¿Es porque quiere ser mujer?</h2>
+				<h2 id="arrobamiento">¿Qué es el arrobamiento?</h2>
 
-				<p>No. La orientación sexual y la identidad de género son diferentes. La orientación sexual es la atracción hacia alguna persona, mientras que la identidad de género es la percepción personal que un individuo tiene sobre sí mismo en cuanto a su género.</p>
 
-				<h2>¿Quién es el hombre y quién es la mujer en una pareja gay?</h2>
-
-				<p>En las relaciones gays hay dos hombres. Ninguno es mujer. Si un hombre es más afeminado que el estereotipo, no es ni más ni menos hombre, tampoco se convierte en "la mujer de la relación".</p>
-
-				<h2>¿Cómo tienen relaciones sexuales los gays?</h2>
-
-				<p>En caso de que los hombres gays quieran tener relaciones sexuales, tienen la posibilidad de hacerlo, ya sea de forma anal u oral.</p>
-
-				<h2>¿Qué es ser activo, pasivo y versátil?</h2>
-
-				<p>"Activo", "pasivo" y "versátil" son los roles sexuales que existen en el sexo gay. Se les denomina "activos" a los hombres que van a penetrar, "pasivos" a los que van a ser penetrados, y "versátiles" a los que pueden disfrutar de ambos roles, siendo activos o pasivos.</p>
-
-				<h2>¿Cuáles son las recomendaciones para tener relaciones sexuales?</h2>
-
-				<p>Se recomienda abastecerse de condones, usar lubricante a base de agua en caso de tener sexo anal y que el pasivo se haga una limpieza anal.</p>
-
-				<p>De igual manera, en la parte de abajo te dejaremos recursos para más información y recomendaciones.</p>
-
-				<h2>¿Puedo preguntar cuál es el rol sexual de una persona?</h2>
-
-				<p>La respuesta es no. Preguntar el rol sexual de una persona es algo muy íntimo, invasivo e indiscreto, por lo que lo mejor es no preguntarlo.</p>
 			</span>
 
 			<div class="referencias">
 				<h3>Referencias: </h3>
 
-				<a target="_blank" href="https://es.wikipedia.org/wiki/Identidad_de_género">https://es.wikipedia.org/wiki/Identidad_de_género</a>
-				<a target="_blank" href="https://gayflagblog.tumblr.com/post/186181118619/gay-man-flag-russian-росси-я-portuguese">https://gayflagblog.tumblr.com/post/186181118619/gay-man-flag-russian-росси-я-portuguese</a>
-				<a target="_blank" href="https://es.wikipedia.org/wiki/Activo,_pasivo_y_versátil">https://es.wikipedia.org/wiki/Activo,_pasivo_y_versátil</a>
-			</div>
-
-			<div class="referencias recursos">
-				<h3>Recursos: </h3>
-
-				<a target="_blank" href="https://www.sico.com.mx/blogs/articulos/mas-que-un-bromance">https://www.sico.com.mx/blogs/articulos/mas-que-un-bromance</a>
-				<a target="_blank" href="https://youtu.be/tb0DhzPAjJE">Video: ¿COMO TENER LA PRIMERA VEZ GAY/LÉSBICA? - TUTORIAL RELACIONES</a>
+				<a target="_blank" href="http://es.asexuality.org/wiki/index.php?title=Sobre_arromanticismo">http://es.asexuality.org/wiki/index.php?title=Sobre_arromanticismo</a>
+				<!-- <a target="_blank" href="https://www.gob.mx/imjuve/articulos/que-significa-lgbtttiq">https://www.gob.mx/imjuve/articulos/que-significa-lgbtttiq</a> -->
+				<!-- <a target="_blank" href="https://axa.mx/blog/que-significa-lgbtttiq">https://axa.mx/blog/que-significa-lgbtttiq</a> -->
 			</div>
 			
-			<h3 class="categorias_h3">Categorías</h3>
+			<h3 class="categorias_h3">Categoría</h3>
 			<div class="categorias_post">
 				<div class="categoria_post lgbtq">LGBTQ+</div>
-				<div class="categoria_post gay">Gay</div>
 			</div>
 		</div>
 
 		
 		<div class="published">
 			<svg class="clock_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z"/></svg>
-			<p>Publicado el <span itemprop="datePublished" content="2022-07-06">06/07/2022</span></p>
+			<p>Publicado el <span itemprop="datePublished" content="2022-??-??">??/??/2022</span></p>
 		</div>
 
+	</div>
+
+	<div class="subscribe_news">
+		<p>¿Quieres saber cuando subamos una nueva publicación? ¡Suscríbete a nuestro boletín de noticias!</p>
+		<div class="news_fields"></div>
+		<div class="field">
+			<input type="text" placeholder="Nombre" title="Nombre" required>
+		</div>
+		<div class="field">
+			<input type="text" name="email" placeholder="Correo" title="Correo" required>
+		</div>
+		<div class="field">
+			<input name="subscribe" type="submit" value="Suscribirse">
+		</div>
 	</div>
 
 	<footer>
@@ -161,7 +146,7 @@
 
 	<div id="close_element"></div>
 
-	<script src="https://www.casa-arcoiris.org/js/second.js"></script>
+	<script src="../../js/second.js"></script>
 	<script src="https://www.casa-arcoiris.org/js/dark-mode.js"></script>
 </body>
 </html>

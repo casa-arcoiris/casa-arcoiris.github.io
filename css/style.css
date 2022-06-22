@@ -7,7 +7,7 @@
 			box-sizing: border-box;
 }
 
-:focus, .header_link_logo:focus-visible, .lgbtq:focus-visible, .jovenes:focus-visible, .referencias > a:focus-visible, .feeling_card:focus-visible, .switch:focus-visible, footer a:focus-visible {
+:focus, .header_link_logo:focus-visible, .lgbtq:focus-visible, .jovenes:focus-visible, .referencias > a:focus-visible, .feeling_card:focus-visible, .switch:focus-visible, footer a:focus-visible, .same_page_link:focus-visible, .field:focus-visible {
 	outline: none;
 	padding: 0;
 }
@@ -78,6 +78,11 @@ a:active:hover, a:visited:hover, a:link:hover, a:active, a:hover, a:visited, a:l
 	color: #fff;
 }
 
+html {
+	scroll-padding-top: 110px;
+	scroll-behavior: smooth;
+}
+
 body {
 	background: #fff;
 	font-family: 'Roboto', sans-serif;
@@ -134,6 +139,10 @@ header.sticky ul li a {
 		display: block;
 		visibility: visible;
 		opacity: 1;
+	}
+
+	div.field {
+		width: 80%;
 	}
 }
 
@@ -323,10 +332,59 @@ p {
 	font-size: 120%;
 }
 
-footer {
-  padding: 2.5% 0%;
-	background: var(--website-color);
+.subscribe_news {
 	margin: 5% 0 0 0;  
+	padding: 2.5% 0;
+	background: #1cb7ff;
+	color: #fff;
+	width: 100%;
+}
+
+.subscribe_news > p {
+	margin: 0 10%;
+	line-height: 200%;
+	text-align: center;
+}
+
+.field {
+  height: 50px;
+  width: 54vh;
+  margin: 3.1vh auto;
+}
+
+.field input{
+  height: 100%;
+  width: 100%;
+  outline: none;
+  padding: 0 1vh 0 2.29vh;
+  font-size: 100%;
+  border-radius: 5px;
+  border: 1px solid #d3d3d3;
+  border-bottom-width: 2px;
+  transition: border-color ease 0.4s, all 0.8s ease;
+}
+
+.field input:focus {
+  border-color: #009de6;
+}
+
+.field input[type="submit"] {
+  color: #fff;
+  font-size: 100%;
+  font-weight: 500;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  background: #009de6;
+}
+
+.field input[type="submit"]:hover, .field input[type="submit"]:focus-visible {
+  background: #007eb8;
+}
+
+footer {
+  padding: 2.5% 0;
+	background: var(--website-color);
 	width: 100%;
 	color: #fff;
   display: flex;
@@ -811,7 +869,16 @@ body.dark .post-card.jovenes:hover, .post-card.jovenes:hover, body.dark .post-ca
 }
 
 .gay_post-bg {
-	background: url(../assets/gay_men_flag.jpg);
+	background: url(../assets/opacity_25.png), url(../assets/gay_men_flag.jpg);
+	background-size: 100% 85vh;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position-y: 15vh;
+	transition: background .8s ease, background-position-y .01s, background-size .1s;
+}
+
+.aromantic_post-bg {
+	background: url(../assets/opacity_25.png), url(../assets/aromantic_flag.jpg);
 	background-size: 100% 85vh;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
@@ -893,7 +960,7 @@ body.dark .post-card.jovenes:hover, .post-card.jovenes:hover, body.dark .post-ca
 	}
 }
 
-.header_trans, .header_bisexual, .header_gay {
+.header_trans, .header_bisexual, .header_gay, .header_aromantic {
 	height: 100%;
 	width: 150%;
 	z-index: -1;
@@ -922,7 +989,13 @@ body.dark .post-card.jovenes:hover, .post-card.jovenes:hover, body.dark .post-ca
 	background-repeat: no-repeat;
 }
 
-.header_trans.action, .header_bisexual.action, .header_gay.action {
+.header_aromantic {
+	background: url('../assets/opacity_25.png'), url('../assets/aromantic_flag.jpg');
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.header_trans.action, .header_bisexual.action, .header_gay.action, .header_aromantic.action {
 	animation: HeaderRainbowMove 1s linear;
 }
 
@@ -967,7 +1040,7 @@ p.post_image-small {
 	margin: 0 0 1.5vh 0;
 }
 
-.referencias > a {
+.referencias > a, .same_page_link {
 	word-break: break-all;
 	font-size: 110%;
 	width: fit-content;
@@ -986,11 +1059,11 @@ p.post_image-small {
 	transform: scale(.9);
 }
 
-.referencias a::after {
+.referencias a::after, .same_page_link::after {
 	display: none;
 }
 
-.referencias a:hover::after, .referencias a:focus-visible::after {
+.referencias a:hover::after, .referencias a:focus-visible::after, .same_page_link:hover::after, .same_page_link:focus-visible::after {
 	content: '';
 	display: block;
 	position: absolute;
@@ -1000,6 +1073,12 @@ p.post_image-small {
 	transform: translateX(-50%);
 	bottom: -0.15vh;
 	left: 50%;
+}
+
+a.same_page_link {
+	position: relative;
+	font-size: 105%;
+	cursor: pointer;
 }
 
 .recursos {
@@ -1212,6 +1291,19 @@ body.dark .post-card.lgbtq:hover, body.dark .post-card.lgbtq:focus-visible, body
 
 body.dark .post-bg {
 	background: #222;
+}
+
+body.dark .subscribe_news {
+	background: #272727;
+}
+
+body.dark .field input[type="submit"] {
+	background: #373737;
+	color: #fff;
+}
+
+body.dark .field input[type="submit"]:hover, body.dark .field input[type="submit"]:focus-visible {
+	background: #2f2f2f;
 }
 
 .switch {
