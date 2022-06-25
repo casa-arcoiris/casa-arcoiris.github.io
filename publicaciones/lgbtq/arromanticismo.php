@@ -1,3 +1,7 @@
+<?php 
+require '../../php_config/config.php';
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -88,16 +92,39 @@
 
 				<p>Una persona arromántica es alguien que no siente atracción romántica.</p>
 
-				<h2>¿Las personas arrománticas son incapaces de amar?</h2>
+				<h2>¿Las personas arrománticas son capaces de amar?</h2>
 
 				<p>Sí. Las personas arrománticas sí son capaces de amar, pero de una manera afectiva, como el amor filial, el amor platónico o el amor fraternal.</p>
 
 				<h2>¿Las personas arrománticas tienen emociones?</h2>
 
-				<p>Sí. Las personas arrománticas tienen emociones, no son personas frías o sin corazón. Pueden sentir <a onclick="goToSection('arrobamiento')" class="same_page_link" tabindex="0">arrobamiento</a>.</p>
+				<p>Sí. Las personas arrománticas tienen emociones, no son personas frías o sin corazón. Pueden sentir <a onclick="goToSection('arrobamiento')" onkeydown="goToSection('arrobamiento')" class="same_page_link" tabindex="0">arrobamiento</a>.</p>
 
 				<h2 id="arrobamiento">¿Qué es el arrobamiento?</h2>
 
+				<p>El arrobamiento es el "enamoramiento" de las personas arrománticas. Es el deseo de tener una relación muy fuerte sin romance ni sexo con alguien. Este tipo de relaciones son emocionalmente más íntimas que una típica amistad.</p>
+
+				<h2>La orientación sexual y la orientación romántica ¿Van de la mano?</h2>
+
+				<p>No, ambas orientaciones son independientes de la otra. Una persona arromántica puede sentir arrobamiento sin importar su orientación sexual.</p>
+
+				<h2>Si me gustan las películas, series o canciones románticas ¿No soy una persona arromántica?</h2>
+
+				<p>El gusto por las películas, series, canciones, libros o cualquier otro tipo de entretenimiento no tiene nada que ver con la orientación romántica.</p>
+
+				<p>Hay muchas personas arrománticas que disfrutan ver películas románticas, pero no sienten atracción romántica.</p>
+
+				<h2>Asexualidad y arromanticismo ¿Son lo mismo?</h2>
+
+				<p>No. Las personas asexuales no sienten atracción sexual hacia otras personas. Las personas arrománticas, por otro lado, no sienten atracción romántica hacia otras personas.</p>
+
+				<h2>Si una persona es arromántica ¿Puede ser asexual?</h2>
+
+				<p>Sí. Debido a que la orientación romántica y la orientación sexual no dependen una de la otra, una persona arromántica puede también ser asexual y viceversa.</p>
+
+				<h2>¿Está bien si me identifico como una persona arromántica si quiero hacer cosas relacionadas con el romance (como besar, abrazar y tomarme de la mano con alguien más)?</h2>
+
+				<p>Sí. Te puedes identificar como una persona arromántica y querer eso. Algunas personas arrománticas disfrutan de este tipo de acciones.</p>
 
 			</span>
 
@@ -105,13 +132,14 @@
 				<h3>Referencias: </h3>
 
 				<a target="_blank" href="http://es.asexuality.org/wiki/index.php?title=Sobre_arromanticismo">http://es.asexuality.org/wiki/index.php?title=Sobre_arromanticismo</a>
-				<!-- <a target="_blank" href="https://www.gob.mx/imjuve/articulos/que-significa-lgbtttiq">https://www.gob.mx/imjuve/articulos/que-significa-lgbtttiq</a> -->
-				<!-- <a target="_blank" href="https://axa.mx/blog/que-significa-lgbtttiq">https://axa.mx/blog/que-significa-lgbtttiq</a> -->
+				<a target="_blank" href="http://es.asexuality.org/wiki/index.php?title=Arrobamiento">http://es.asexuality.org/wiki/index.php?title=Arrobamiento</a>
+				<a target="_blank" href="https://www.aromanticism.org/en/faq#what-is-aromanticism">https://www.aromanticism.org/en/faq#what-is-aromanticism</a>
 			</div>
 			
-			<h3 class="categorias_h3">Categoría</h3>
+			<h3 class="categorias_h3">Categorías</h3>
 			<div class="categorias_post">
 				<div class="categoria_post lgbtq">LGBTQ+</div>
+				<div class="categoria_post aromantic">Arromanticismo</div>
 			</div>
 		</div>
 
@@ -123,18 +151,22 @@
 
 	</div>
 
-	<div class="subscribe_news">
+	<div class="subscribe_news" id="subscribe_news">
 		<p>¿Quieres saber cuando subamos una nueva publicación? ¡Suscríbete a nuestro boletín de noticias!</p>
-		<div class="news_fields"></div>
-		<div class="field">
-			<input type="text" placeholder="Nombre" title="Nombre" required>
-		</div>
-		<div class="field">
-			<input type="text" name="email" placeholder="Correo" title="Correo" required>
-		</div>
-		<div class="field">
-			<input name="subscribe" type="submit" value="Suscribirse">
-		</div>
+		<form action="" method="post">
+			<div class="fields_container">
+				<div class="field">
+					<input type="text" name="name" placeholder="Nombre" title="Nombre" required>
+				</div>
+				<div class="field">
+					<input type="text" name="email" placeholder="Correo" title="Correo" required>
+				</div>
+				<p id="p_advertisement" class="wrong_log"></p>
+				<div class="field">
+					<input name="subscribe" type="submit" value="Suscribirse">
+				</div>
+			</div>
+		</form>
 	</div>
 
 	<footer>
@@ -148,5 +180,7 @@
 
 	<script src="../../js/second.js"></script>
 	<script src="https://www.casa-arcoiris.org/js/dark-mode.js"></script>
+
+	<?php include('../../php_config/subscribe_form.php'); ?>
 </body>
 </html>

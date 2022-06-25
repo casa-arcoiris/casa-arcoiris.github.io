@@ -14,7 +14,7 @@ var eachEmotion = document.querySelectorAll('.feeling_card');
 
 const filter_list = document.getElementById('filter_list');
 var filterListElements = document.querySelectorAll('.filterListElements');
-var filteredList = document.querySelectorAll('.post-card_container')
+var filteredList = document.querySelectorAll('.post-card_container');
 
 var drawPost = document.querySelectorAll('.draw');
 
@@ -223,4 +223,17 @@ if (drawPost) {
 
 function goToSection(id) {
 	document.getElementById(id).scrollIntoView();
+}
+
+function repeatedEmail() {
+	document.getElementById('subscribe_news').scrollIntoView();
+	document.getElementById("p_advertisement").innerHTML = "Este correo ya está registrado.";
+	p_advertisement.classList.add('bad');
+	// p_advertisement.classList.remove('p_advertisement_stl');
+}
+
+function successSubscribe() {
+	document.getElementById('subscribe_news').scrollIntoView();
+	document.getElementById("p_advertisement").innerHTML = "Tu correo ha sido registrado con éxito.";
+	p_advertisement.classList.add('ok');
 }

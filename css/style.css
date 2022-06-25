@@ -27,7 +27,7 @@ a:active:hover, a:visited:hover, a:link:hover, a:active, a:hover, a:visited, a:l
 	color: #fff;
 }
 
-.referencias > a::selection {
+.referencias > a::selection, .same_page_link::selection {
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: white;
 }
@@ -141,7 +141,7 @@ header.sticky ul li a {
 		opacity: 1;
 	}
 
-	div.field {
+	div.field, p.wrong_log {
 		width: 80%;
 	}
 }
@@ -338,12 +338,18 @@ p {
 	background: #1cb7ff;
 	color: #fff;
 	width: 100%;
+	transition: .8s ease;
 }
 
 .subscribe_news > p {
 	margin: 0 10%;
 	line-height: 200%;
 	text-align: center;
+}
+
+.fields_container {
+	width: fit-content;
+	margin: 3.1vh auto;
 }
 
 .field {
@@ -366,6 +372,26 @@ p {
 
 .field input:focus {
   border-color: #009de6;
+}
+
+.wrong_log {
+  margin: 0 auto 0 auto;
+}
+
+.ok {
+  background: #009b3c;
+  width: 100%;
+  padding: 1vh;
+  display: block;
+  color: #fff;
+}
+
+.bad {
+  background: #ff3d49;
+  width: 100%;
+  padding: 1vh;
+  display: block;
+  color: #fff;
 }
 
 .field input[type="submit"] {
@@ -1051,11 +1077,11 @@ p.post_image-small {
 	transition: all 0.25s ease-in-out;
 }
 
-.referencias > a:hover, .referencias > a:focus-visible {
+.referencias > a:hover, .referencias > a:focus-visible, .same_page_link:hover, .same_page_link:focus-visible {
 	transform: scale(1.025);
 }
 
-.referencias > a:active {
+.referencias > a:active, .same_page_link:active {
 	transform: scale(.9);
 }
 
@@ -1079,6 +1105,7 @@ a.same_page_link {
 	position: relative;
 	font-size: 105%;
 	cursor: pointer;
+	display: inline-block;
 }
 
 .recursos {
@@ -1132,7 +1159,7 @@ a.same_page_link {
 	background: var(--clr-bg);
 }
 
-.categoria_post.trans, .categoria_post.bisexual, .categoria_post.gay {
+.categoria_post.trans, .categoria_post.bisexual, .categoria_post.gay, .categoria_post.aromantic {
 	font-weight: bold;
 	color: #000;
 	background-repeat: no-repeat;
@@ -1148,6 +1175,11 @@ a.same_page_link {
 
 .categoria_post.gay {
 	background-image: url(../assets/gay_men_flag.jpg);
+	background-size: 101% 100%;
+}
+
+.categoria_post.aromantic {
+	background-image: url(../assets/aromantic_flag.jpg);
 	background-size: 101% 100%;
 }
 
