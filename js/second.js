@@ -229,7 +229,6 @@ function repeatedEmail() {
 	document.getElementById('subscribe_news').scrollIntoView();
 	document.getElementById("p_advertisement").innerHTML = "Este correo ya está registrado.";
 	p_advertisement.classList.add('bad');
-	// p_advertisement.classList.remove('p_advertisement_stl');
 }
 
 function successSubscribe() {
