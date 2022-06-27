@@ -1331,6 +1331,7 @@ body.dark .subscribe_news {
 body.dark .field input[type="submit"] {
 	background: #373737;
 	color: #fff;
+	-webkit-appearance: none;
 }
 
 body.dark .field input[type="submit"]:hover, body.dark .field input[type="submit"]:focus-visible {
