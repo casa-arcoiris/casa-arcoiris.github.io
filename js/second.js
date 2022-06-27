@@ -86,7 +86,7 @@ function actionHeaderNeon() {
 	HeaderNeon.classList.add('action');
 	setTimeout(function(){
 		HeaderNeon.classList.remove('action');
-	}, 3000);
+	}, 8500);
 }
 
 if (HeaderNeon) {
@@ -245,6 +245,6 @@ function emptyRecaptcha() {
 	p_advertisement.classList.add('bad');
 }
 
-if (window.screen.width <= 319) {
+if (window.screen.width <= 319 && recaptcha) {
 	recaptcha.setAttribute("data-size", "compact");
 }
