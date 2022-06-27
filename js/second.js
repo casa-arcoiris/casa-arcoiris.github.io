@@ -18,6 +18,8 @@ var filteredList = document.querySelectorAll('.post-card_container');
 
 var drawPost = document.querySelectorAll('.draw');
 
+const recaptcha = document.getElementById('recaptcha');
+
 const copyright = document.querySelector('.copyright');
 
 const cargarImagen = (entradas, observador) => {
@@ -235,4 +237,14 @@ function successSubscribe() {
 	document.getElementById('subscribe_news').scrollIntoView();
 	document.getElementById("p_advertisement").innerHTML = "Tu correo ha sido registrado con éxito.";
 	p_advertisement.classList.add('ok');
+}
+
+function emptyRecaptcha() {
+	document.getElementById('subscribe_news').scrollIntoView();
+	document.getElementById("p_advertisement").innerHTML = 'Por favor marca la casilla que dice "No soy un robot"';
+	p_advertisement.classList.add('bad');
+}
+
+if (window.screen.width <= 319) {
+	recaptcha.setAttribute("data-size", "compact");
 }

@@ -348,8 +348,11 @@ p {
 }
 
 .fields_container {
-	width: fit-content;
+	width: 54vh;
 	margin: 3.1vh auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .field {
@@ -392,6 +395,10 @@ p {
   padding: 1vh;
   display: block;
   color: #fff;
+}
+
+.g-recaptcha {
+	margin: 3.1vh 0;
 }
 
 .field input[type="submit"] {

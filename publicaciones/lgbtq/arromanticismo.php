@@ -10,7 +10,7 @@ require '../../php_config/config.php';
 	<meta name="keywords" content="casa, arcoíris, comunidad, lgbtq, casa arcoíris, comunidad lgbtq, arromántica, arromanticismo, arromántico">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>¿Arromanticismo? | Casa Arcoíris</title>
-	<link rel="stylesheet" href="../../css/style.css">
+	<link rel="stylesheet" href="https://www.casa-arcoiris.org/css/style.css">
 	<script src="https://www.casa-arcoiris.org/js/main.js"></script>
 	<link rel="shortcut icon" href="https://www.casa-arcoiris.org/assets/favicon.png" type="image/x-icon">
 	<link rel="apple-touch-icon" href="https://www.casa-arcoiris.org/assets/favicon.png">
@@ -161,6 +161,7 @@ require '../../php_config/config.php';
 				<div class="field">
 					<input type="text" name="email" placeholder="Correo" title="Correo" required>
 				</div>
+				<div id="recaptcha" data-sitekey="6LeeM6EgAAAAAB3kmI47hig8I5gOFEDjeqU5-xI9" SameSite="secure" class="g-recaptcha"></div>
 				<p id="p_advertisement" class="wrong_log"></p>
 				<div class="field">
 					<input name="subscribe" type="submit" value="Suscribirse">
@@ -178,8 +179,9 @@ require '../../php_config/config.php';
 
 	<div id="close_element"></div>
 
-	<script src="../../js/second.js"></script>
+	<script src="https://www.casa-arcoiris.org/js/second.js"></script>
 	<script src="https://www.casa-arcoiris.org/js/dark-mode.js"></script>
+	<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit&hl={{app.request.locale|default(defaultLang) }}" async defer></script>
 
 	<?php include('../../php_config/subscribe_form.php'); ?>
 </body>
