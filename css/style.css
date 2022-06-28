@@ -317,7 +317,7 @@ h2.inicio {
 	margin: 4vh 0 2vh 0;
 }
 
-img, .reveal-text, .filter_posts > p, .filter_list > li, .post-card, .header_rainbow, .header_neon, .published, .categoria_post {
+img, .reveal-text, .filter_posts > p, .filter_list > li, .post-card, .header_rainbow, .header_neon, .published, .categoria_post, .confirm_email {
 	-moz-user-select: none;
 	-webkit-user-select: none;
 	-ms-user-select: none;
@@ -358,7 +358,7 @@ p {
 .field {
   height: 50px;
   width: 54vh;
-  margin: 3.1vh auto;
+  margin: 3.1vh auto 0 auto;
 }
 
 .field input{
@@ -378,7 +378,8 @@ p {
 }
 
 .wrong_log {
-  margin: 0 auto 0 auto;
+	text-align: left;
+  margin: 3.1vh auto 0 auto;
 }
 
 .ok {
@@ -398,7 +399,7 @@ p {
 }
 
 .g-recaptcha {
-	margin: 3.1vh 0;
+	margin: 3.1vh 0 0 0;
 }
 
 .field input[type="submit"] {
@@ -409,10 +410,36 @@ p {
   border: none;
   cursor: pointer;
   background: #009de6;
+  -webkit-appearance: none;
 }
 
 .field input[type="submit"]:hover, .field input[type="submit"]:focus-visible {
   background: #007eb8;
+}
+
+.form-inner {
+  display: flex;
+  margin: 0.4vh 0 3.5vh 0;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.form-container .form-inner form{
+  width: 50%;
+  transition: all 0.3s;
+}
+
+.confirm_email {
+  border: none;
+  width: 100%;
+  margin: 1vh 0 0 0;
+  word-break: break-all;
+}
+
+.vl {
+  display: none;
 }
 
 footer {
@@ -1331,7 +1358,6 @@ body.dark .subscribe_news {
 body.dark .field input[type="submit"] {
 	background: #373737;
 	color: #fff;
-	-webkit-appearance: none;
 }
 
 body.dark .field input[type="submit"]:hover, body.dark .field input[type="submit"]:focus-visible {

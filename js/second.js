@@ -227,22 +227,10 @@ function goToSection(id) {
 	document.getElementById(id).scrollIntoView();
 }
 
-function repeatedEmail() {
+function writeOnSubscribtion(text, add_class) {
 	document.getElementById('subscribe_news').scrollIntoView();
-	document.getElementById("p_advertisement").innerHTML = "Este correo ya está registrado.";
-	p_advertisement.classList.add('bad');
-}
-
-function successSubscribe() {
-	document.getElementById('subscribe_news').scrollIntoView();
-	document.getElementById("p_advertisement").innerHTML = "Tu correo ha sido registrado con éxito.";
-	p_advertisement.classList.add('ok');
-}
-
-function emptyRecaptcha() {
-	document.getElementById('subscribe_news').scrollIntoView();
-	document.getElementById("p_advertisement").innerHTML = 'Por favor marca la casilla que dice "No soy un robot"';
-	p_advertisement.classList.add('bad');
+	document.getElementById("p_advertisement").innerHTML = text;
+	p_advertisement.classList.add(add_class);
 }
 
 if (window.screen.width <= 319 && recaptcha) {
