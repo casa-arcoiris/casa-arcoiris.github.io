@@ -9,8 +9,8 @@ require 'php_config/config.php';
 	<meta name="description" content="Casa Arcoíris es un blog con el objetivo de ayudar a jóvenes que forman parte de la comunidad LGBTQ+.">
 	<meta name="keywords" content="casa, arcoíris, comunidad, lgbtq, nuestro, objetivo, inicio, casa arcoíris, nuestro objetivo, comunidad lgbtq">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Casa Arcoíris | Inicio</title>
-	<link rel="stylesheet" href="css/style.css">
+	<title>Casa Arcoíris | Desuscribir</title>
+	<link rel="stylesheet" href="https://www.casa-arcoiris.org/css/style.css">
 	<script src="https://www.casa-arcoiris.org/js/main.js"></script>
 	<link rel="shortcut icon" href="https://www.casa-arcoiris.org/assets/favicon.png" type="image/x-icon">
 	<link rel="apple-touch-icon" href="https://www.casa-arcoiris.org/assets/favicon.png">
@@ -115,7 +115,7 @@ require 'php_config/config.php';
 
 	<div id="close_element"></div>
 
-	<script src="js/second.js"></script>
+	<script src="https://www.casa-arcoiris.org/js/second.js"></script>
 	<script src="https://www.casa-arcoiris.org/js/dark-mode.js"></script>
 	<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit&hl={{app.request.locale|default(defaultLang) }}" async defer></script>
 

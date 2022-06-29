@@ -847,7 +847,7 @@ body.dark .post-card.jovenes:hover, .post-card.jovenes:hover, body.dark .post-ca
 	opacity: 1;
 }
 
-.post-card.trans, .post-card.bisexual, .post-card.gay {
+.post-card.trans, .post-card.bisexual, .post-card.gay, .post-card.aromantic {
 	background-image: url(../assets/trans_flag.jpg);
 	background-size: 100% 25.5vh;
 	color: #000;
@@ -862,6 +862,10 @@ body.dark .post-card.jovenes:hover, .post-card.jovenes:hover, body.dark .post-ca
 
 .post-card.gay {
 	background-image: url(../assets/gay_men_flag.jpg);
+}
+
+.post-card.aromantic {
+	background-image: url(../assets/aromantic_flag.jpg);
 }
 
 .post-title h1 {
