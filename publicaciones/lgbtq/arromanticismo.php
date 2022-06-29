@@ -25,7 +25,8 @@ require '../../php_config/config.php';
 	<link rel="shortcut icon" href="https://www.casa-arcoiris.org/assets/favicon.png" type="image/x-icon">
 	<link rel="apple-touch-icon" href="https://www.casa-arcoiris.org/assets/favicon.png">
 </head>
-<body class="aromantic_post-bg">
+<body>
+	<div class="aromantic_post-bg" id="post_background"></div>
 
 	<header>
 		<div class="header_aromantic" id="header_moving_right"></div>

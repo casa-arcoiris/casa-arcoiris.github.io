@@ -21,7 +21,8 @@
 	<link rel="shortcut icon" href="https://www.casa-arcoiris.org/assets/favicon.png" type="image/x-icon">
 	<link rel="apple-touch-icon" href="https://www.casa-arcoiris.org/assets/favicon.png">
 </head>
-<body class="bisexual_post-bg">
+<body>
+	<div class="bisexual_post-bg" id="post_background"></div>
 
 	<header>
 		<div class="header_bisexual" id="header_moving_right"></div>
@@ -135,7 +136,7 @@
 
 				<a target="_blank" href="https://cuidateplus.marca.com/sexualidad/diccionario/bisexualidad.html">https://cuidateplus.marca.com/sexualidad/diccionario/bisexualidad.html</a>
 				<a target="_blank" href="https://helloclue.com/es/articulos/lgbt/mitos-y-realidades-sobre-la-bisexualidad">https://helloclue.com/es/articulos/lgbt/mitos-y-realidades-sobre-la-bisexualidad</a>
-				<a target="_blank" href="https://es.wikipedia.org/wiki/D%C3%ADa_Internacional_de_la_Bisexualidad">https://es.wikipedia.org/wiki/D%C3%ADa_Internacional_de_la_Bisexualidad</a>
+				<a target="_blank" href="https://es.wikipedia.org/wiki/Día_Internacional_de_la_Bisexualidad">https://es.wikipedia.org/wiki/Día_Internacional_de_la_Bisexualidad</a>
 			</div>
 			
 			<h3 class="categorias_h3">Categorías</h3>
