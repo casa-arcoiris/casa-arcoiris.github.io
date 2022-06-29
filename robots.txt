@@ -3,4 +3,4 @@ Disallow:
 Disallow: no_lanzadas.html
 Disallow: no_revisadas.html
 Disallow: 404.html
-Sitemap: https://www.casa-arcoiris.org
+Sitemap: https://www.casa-arcoiris.org/sitemap.xml

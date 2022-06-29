@@ -1,10 +1,16 @@
+<?php 
+require 'php_config/config.php';
+?>
+
 <!DOCTYPE html>
 <html lang="es">
-<head>	
+<head>
 	<meta charset="UTF-8">
+	<meta name="description" content="Casa Arcoíris es un blog con el objetivo de ayudar a jóvenes que forman parte de la comunidad LGBTQ+.">
+	<meta name="keywords" content="casa, arcoíris, comunidad, lgbtq, nuestro, objetivo, inicio, casa arcoíris, nuestro objetivo, comunidad lgbtq">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Publicaciones no lanzadas | Casa Arcoíris</title>
-	<link rel="stylesheet" href="css/style.css">
+	<title>Casa Arcoíris | Desuscribir</title>
+	<link rel="stylesheet" href="https://www.casa-arcoiris.org/css/style.css">
 	<script src="https://www.casa-arcoiris.org/js/main.js"></script>
 	<link rel="shortcut icon" href="https://www.casa-arcoiris.org/assets/favicon.png" type="image/x-icon">
 	<link rel="apple-touch-icon" href="https://www.casa-arcoiris.org/assets/favicon.png">
@@ -12,7 +18,7 @@
 <body>
 
 	<header>
-		<a class="header_link_logo" href="https://www.casa-arcoiris.org"><img src="https://www.casa-arcoiris.org/assets/casa_arcoiris_logo.png" class="header_logo"></a>
+		<a class="header_link_logo" href="https://www.casa-arcoiris.org"><img src="https://www.casa-arcoiris.org/assets/casa_arcoiris_logo.png" class="header_logo" alt="Logo de Casa Arcoíris"></a>
 		<svg tabindex="0" onclick="menu_f()" id="menu_icon" class="menu_icon" viewBox="0 0 100 80" width="40" height="40">
   			<rect y="0" width="100" height="20" rx="8"></rect>
   			<rect y="30" width="100" height="20" rx="8"></rect>
@@ -68,30 +74,42 @@
 		</ul>
 	</header>
 
-	<div class="space"></div>
+	<div class="extra_space"></div>
 
-	<h1 class="div_text">Publicaciones no lanzadas</h1>
+	<div class="div_text">
+		<h1>Desuscribir</h1>
+			
+		<p>Por favor, ingresa el siguiente correo electrónico para confirmar que quieres desuscribirte de nuestro boletín de noticias:</p>
 
-	<div class="filter_posts">
-		<p id="openFilterBtn" tabindex="0" onclick="openFilter()">Filtrar <svg xmlns="http://www.w3.org/2000/svg" class="filter_icon" viewBox="0 0 512 512"><path d="M3.853 54.87C10.47 40.9 24.54 32 40 32H472C487.5 32 501.5 40.9 508.1 54.87C514.8 68.84 512.7 85.37 502.1 97.33L320 320.9V448C320 460.1 313.2 471.2 302.3 476.6C291.5 482 278.5 480.9 268.8 473.6L204.8 425.6C196.7 419.6 192 410.1 192 400V320.9L9.042 97.33C-.745 85.37-2.765 68.84 3.854 54.87L3.853 54.87z"/></svg></p>
+		<div class="centered_content" id="subscribe_news">
 
-		<ul id="filter_list" class="filter_list">
-			<li tabindex="0" class="filterListElements" onclick="filterContent('jovenes')">Ver sólo categoría de "Jóvenes"</li>
-			<li tabindex="0" class="filterListElements" onclick="filterContent('lgbtq')">Ver sólo categoría de "LGBTQ+"</li>
-			<li tabindex="0" class="filterListElements" onclick="resetFilteredContent()">Ver todas las categorías</li>
-		</ul>
-	</div>
+			<div class="form-inner">
+				<form action="" class="" method="post">
+					<div class="fields_container">
+						<p class="confirm_email"><?php $email = $_GET['email']; echo $email ?></p>
+						<div class="field vl">
+							<input type="hidden" name="compare_email" value="<?php echo $email;?>" required>
+						</div>
+						<div class="field">
+							<input type="text" name="confirm_email" placeholder="Confirmación de correo" title="Confirmación de correo" required>
+						</div>
+						<div id="recaptcha" data-sitekey="6LeeM6EgAAAAAB3kmI47hig8I5gOFEDjeqU5-xI9" SameSite="secure" class="g-recaptcha"></div>
+						<p id="p_advertisement" class="wrong_log"></p>
+						<div class="field">
+							<input name="unsubscribe" type="submit" value="Desuscribir">
+						</div>
+					</div>
+				</form>
+			</div>
 
-	
+		</div>
 
-	<div class="centered_content post-container" id="filteredList">
-		
 	</div>
 
 	<footer>
 		<div class="footer_content">
 			<p class="copyright footer_text"></p>
-			<a href="https://www.casa-arcoiris.org"><img class="footer_logo" src="https://www.casa-arcoiris.org/assets/casa_arcoiris_logo.png" alt=""></a>
+			<a href="https://www.casa-arcoiris.org"><img class="footer_logo" src="https://www.casa-arcoiris.org/assets/casa_arcoiris_logo.png" alt="Logo de Casa Arcoíris"></a>
 		</div>
 	</footer>
 
@@ -99,5 +117,8 @@
 
 	<script src="https://www.casa-arcoiris.org/js/second.js"></script>
 	<script src="https://www.casa-arcoiris.org/js/dark-mode.js"></script>
+	<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit&hl={{app.request.locale|default(defaultLang) }}" async defer></script>
+
+	<?php include('php_config/subscribe_form.php'); ?>
 </body>
 </html>

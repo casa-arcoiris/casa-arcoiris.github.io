@@ -14,9 +14,11 @@ var eachEmotion = document.querySelectorAll('.feeling_card');
 
 const filter_list = document.getElementById('filter_list');
 var filterListElements = document.querySelectorAll('.filterListElements');
-var filteredList = document.querySelectorAll('.post-card_container')
+var filteredList = document.querySelectorAll('.post-card_container');
 
 var drawPost = document.querySelectorAll('.draw');
+
+const recaptcha = document.getElementById('recaptcha');
 
 const copyright = document.querySelector('.copyright');
 
@@ -84,7 +86,7 @@ function actionHeaderNeon() {
 	HeaderNeon.classList.add('action');
 	setTimeout(function(){
 		HeaderNeon.classList.remove('action');
-	}, 3000);
+	}, 8500);
 }
 
 if (HeaderNeon) {
@@ -223,4 +225,14 @@ if (drawPost) {
 
 function goToSection(id) {
 	document.getElementById(id).scrollIntoView();
+}
+
+function writeOnSubscribtion(text, add_class) {
+	document.getElementById('subscribe_news').scrollIntoView();
+	document.getElementById("p_advertisement").innerHTML = text;
+	p_advertisement.classList.add(add_class);
+}
+
+if (window.screen.width <= 319 && recaptcha) {
+	recaptcha.setAttribute("data-size", "compact");
 }
