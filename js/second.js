@@ -13,6 +13,7 @@ const HeaderMovingRight = document.querySelector('#header_moving_right');
 var eachEmotion = document.querySelectorAll('.feeling_card');
 
 const filter_list = document.getElementById('filter_list');
+const clearFiltersBtn = document.getElementById('clearFiltersBtn');
 var filterListElements = document.querySelectorAll('.filterListElements');
 var filteredList = document.querySelectorAll('.post-card_container');
 
@@ -171,10 +172,13 @@ function filterContent(activeClass) {
 		}
 		i++;
 	}
+	clearFiltersBtn.classList.remove('hide');
 }
 
-function resetFilteredContent() {
-	openFilter();
+function resetFilteredContent(open) {
+	if (!open) {
+		openFilter();
+	}
 	var filterListLength = filteredList.length;
 	let i = 0;
 	while (i <= filterListLength - 1) {
@@ -197,6 +201,7 @@ function resetFilteredContent() {
 			image.classList.remove('inside');
 		}
 	});
+	clearFiltersBtn.classList.add('hide');
 }
 
 if (filter_list) {

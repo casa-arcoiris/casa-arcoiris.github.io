@@ -591,7 +591,8 @@ footer > p {
 	margin: 1.25vh 10%;
 	display: flex;
 	justify-content: flex-start;
-	flex-direction: column;
+	flex-direction: row;
+	align-items: center;
 	position: relative;
 }
 
@@ -607,6 +608,16 @@ footer > p {
 	align-items: center;
 }
 
+#clearFiltersBtn {
+	margin: 0 0 0 2.5vh;
+}
+
+#clearFiltersBtn.hide {
+	visibility: hidden;
+	opacity: 0;
+	display: none;
+}
+
 .filter_posts > p:hover, .filter_posts > p:focus-visible, .filter_list > li:hover, .filter_list > li:focus-visible {
 	background: #0086c4;
 	outline: none;
@@ -614,8 +625,14 @@ footer > p {
 
 .filter_icon {
 	fill: #fff;
-	height: 3vh;
+	height: 12pt;
 	margin: 0 0 0 1.5vh;
+}
+
+.clear_filters_icon {
+	fill: #fff;
+	height: 12pt;
+	margin: 0 1.5vh 0 0;
 }
 
 .filter_list {
@@ -826,7 +843,7 @@ body.dark .post-card.jovenes:hover, .post-card.jovenes:hover, body.dark .post-ca
 }
 
 .post-card.jovenes:hover > p, .post-card.jovenes:focus-visible > p {
-	font-size: 1.75rem;
+	font-size: 4.25vh;
 }
 
 .post-card.jovenes::after {
@@ -1426,4 +1443,15 @@ i.sun, i.moon {
   display: block;
   background: none;
   color: #fff;
+}
+
+@media (max-width: 413px) {
+	.filter_posts {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	#clearFiltersBtn {
+		margin: 2.5vh 0 0 0;
+	}
 }
