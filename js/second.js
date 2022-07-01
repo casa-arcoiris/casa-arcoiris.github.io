@@ -182,8 +182,21 @@ function resetFilteredContent() {
 		if (filteredList[i].classList.contains('hidefilteredelement')) {
 			filteredList[i].classList.remove('hidefilteredelement');
 		}
+
 		i++;
 	}
+	drawPost.forEach(function(image, index) {
+		if ((image.classList.contains('hidefilteredelement') || image.classList.contains('inside'))) {
+			image.classList.remove('inside');
+			console.log(image);
+			setTimeout(function(){
+				image.classList.add('inside')
+			}, 35);
+		}
+		else {
+			image.classList.remove('inside');
+		}
+	});
 }
 
 if (filter_list) {
@@ -220,7 +233,7 @@ if (close_element) {
 if (drawPost) {
 	drawPost.forEach(function(image, index) {
 		observador.observe(image);
-	});
+	})
 }
 
 function goToSection(id) {
