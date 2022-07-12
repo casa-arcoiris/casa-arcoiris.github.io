@@ -95,8 +95,8 @@ require '../../php_config/config.php';
 
 			<p>¿Alguna vez has escuchado a una persona decir que es arromántica pero no sabes qué quiere decir? ¡Aquí te aclaramos algunas dudas!</p>
 
-			<img itemprop="image" class="post_image" src="https://www.casa-arcoiris.org/assets/aromantic_flag.jpg" alt="Banderas representando a la comunidad arromántica">
-			<p class="post_image-small">Banderas representando a la comunidad arromántica</p>
+			<img itemprop="image" class="post_image" src="https://www.casa-arcoiris.org/assets/aromantic_flag.jpg" alt="Bandera representando a la comunidad arromántica">
+			<p class="post_image-small">Bandera representando a la comunidad arromántica</p>
 
 			<span itemprop="articleBody">
 				<h2>¿Qué significa ser un persona arromántica?</h2>

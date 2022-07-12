@@ -379,7 +379,6 @@ p {
 
 .wrong_log {
 	text-align: left;
-  margin: 3.1vh auto 0 auto;
 }
 
 .ok {
@@ -388,6 +387,7 @@ p {
   padding: 1vh;
   display: block;
   color: #fff;
+  margin: 3.1vh auto 0 auto;
 }
 
 .bad {
@@ -396,6 +396,7 @@ p {
   padding: 1vh;
   display: block;
   color: #fff;
+  margin: 3.1vh auto 0 auto;
 }
 
 .g-recaptcha {
@@ -1090,6 +1091,12 @@ body.dark .post-card.jovenes:hover, .post-card.jovenes:hover, body.dark .post-ca
 	object-fit: contain;
 }
 
+.banderas_post {
+	width: 55%;
+	margin: 0 22.5%;
+	object-fit: contain;
+}
+
 .post_text h2 {
 	margin: 0 0 3vh 0;
 }
@@ -1103,6 +1110,11 @@ p.post_image-small {
 	width: 80%;
 	margin: 0 10% 5vh;
 	line-height: 100%;
+}
+
+p.post_image-small.banderas_post {
+	margin: 0 22.5% 5vh;
+	width: 55%;
 }
 
 .referencias {
