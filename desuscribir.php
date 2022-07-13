@@ -9,7 +9,7 @@ require 'php_config/config.php';
 	<meta name="description" content="Casa Arcoíris es un blog con el objetivo de ayudar a jóvenes que forman parte de la comunidad LGBTQ+.">
 	<meta name="keywords" content="casa, arcoíris, comunidad, lgbtq, nuestro, objetivo, inicio, casa arcoíris, nuestro objetivo, comunidad lgbtq">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Casa Arcoíris | Desuscribir</title>
+	<title>Desuscribir | Casa Arcoíris</title>
 	<link rel="stylesheet" href="https://www.casa-arcoiris.org/css/style.css">
 	<script src="https://www.casa-arcoiris.org/js/main.js"></script>
 	<link rel="shortcut icon" href="https://www.casa-arcoiris.org/assets/favicon.png" type="image/x-icon">
