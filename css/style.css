@@ -1004,23 +1004,27 @@ body.dark .post-card.jovenes:hover, .post-card.jovenes:hover, body.dark .post-ca
 	left: 0;
 }
 
-.header_neon.action {
-	animation: HeaderRainbowMove 10s linear;
-	width: 150%;
-	height: 100%;
-	transition: background-image .8s ease;
-}
-
 .header_neon.action::after {
 	content: '';
 	display: block;
 	height: 97%;
+	width: 150%;
+	background: none;
+	position: relative;
+	top: -97%;
+	background-image: url(../assets/hearts_neon.svg);
+	animation: HeaderRainbowMove 10s linear;
+}
+
+.header_neon.action::before {
+	content: '';
+	display: block;
+	height: 97.5%;
 	border-left: var(--clr-neon) 0.175em solid;
 	border-top: var(--clr-neon) 0.175em solid;
 	border-right: var(--clr-neon) 0.175em solid;
 	box-shadow: inset 0 2px 0.75em 0 var(--clr-neon), 0 -95px 0.5em 0 var(--clr-neon);
 	background: var(--clr-bg);
-	background-image: url(../assets/hearts_neon.svg);
 }
 
 @keyframes flickerText {
@@ -1167,6 +1171,18 @@ a.same_page_link {
 	font-size: 105%;
 	cursor: pointer;
 	display: inline-block;
+}
+
+a.jovenes_link, div.jovenes_link > a {
+	text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
+	color: var(--clr-neon);
+	background: none;
+	-webkit-text-fill-color: unset;
+}
+
+a.jovenes_link:hover::after, div.jovenes_link > a:hover::after, a.jovenes_link:focus-visible::after, div.jovenes_link > a:focus-visible::after {
+	background: var(--clr-neon);
+	box-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
 }
 
 .recursos {
