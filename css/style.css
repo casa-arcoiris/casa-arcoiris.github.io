@@ -7,7 +7,7 @@
 			box-sizing: border-box;
 }
 
-:focus, .header_link_logo:focus-visible, .lgbtq:focus-visible, .jovenes:focus-visible, .referencias > a:focus-visible, .feeling_card:focus-visible, .switch:focus-visible, footer a:focus-visible, .same_page_link:focus-visible, .field:focus-visible {
+:focus, .header_link_logo:focus-visible, .lgbtq:focus-visible, .jovenes:focus-visible, .referencias > a:focus-visible, .feeling_card:focus-visible, .switch:focus-visible, footer a:focus-visible, .same_page_link:focus-visible, .field:focus-visible, .publicaciones-item .icon-container:focus-visible {
 	outline: none;
 	padding: 0;
 }
@@ -135,42 +135,9 @@ header.sticky ul li a {
 		opacity: 0;
 	}
 
-	div.phone_section {
-		display: block;
-		visibility: visible;
-		opacity: 1;
-	}
-
 	div.field, p.wrong_log {
 		width: 80%;
 	}
-}
-
-.phone_section {
-	margin: 2vh 0 0 0;
-	display: none;
-	visibility: hidden;
-	opacity: 0;
-}
-
-.frame {
-	margin: 2vh 0 0 0;
-	border: 1px solid #343D5B;
-	padding: 19px 22px;
-	border-radius: 8px;
-	align-items: center;
-	flex-direction: column;
-	height: 31em;
-	background-position-y: -1.45em;
-	object-fit: contain;
-	background-image: url('https://www.casa-arcoiris.org/assets/light_mode_menu.gif');
-	background-repeat: no-repeat;
-	background-size: 100%;
-}
-
-body.dark .frame {
-	border: 1px solid #333;
-	background-image: url('https://www.casa-arcoiris.org/assets/dark_mode_menu.gif');
 }
 
 header ul#menu {
@@ -686,6 +653,96 @@ footer > p {
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: center;
+}
+
+.publicaciones-slide {
+	justify-content: flex-start;
+	flex-wrap: nowrap;
+	overflow-x: scroll;
+	scroll-snap-type: x mandatory;
+	-ms-scroll-snap-type: x mandatory;
+	margin: 3vh 0 5% 0;
+	padding: 0 0 2vh 0;
+}
+
+.publicaciones-slide .post-card_container {
+	min-width: 44vh;
+}
+
+.publicaciones-slide .draw.inside::before, .publicaciones-slide .draw.inside::after {
+	height: 98.3%;
+} 
+
+.publicaciones-slide .draw, .publicaciones-slide .publicaciones-item {
+	scroll-snap-align: start;
+}
+
+.publicaciones-slide .go_to_post-btn {
+	font-size: 70%;
+}
+
+.publicaciones-item {
+	background: var(--clr-bg);
+	color: var(--clr-neon);
+	padding: 2vh;
+	-webkit-background-clip: padding-box;
+  border: solid 5px transparent;
+  border-radius: 1em;
+  position: relative;
+  margin: 0 0 1vh 0;
+}
+
+.publicaciones-item:before {
+	content: '';
+	position: absolute;
+	top: -5px;
+	right: -5px;
+	bottom: -5px;
+	left: -5px;
+	z-index: -1;
+	border-radius: inherit;
+	background: linear-gradient(to right, #ff3d49, #ff8d00, #ffdf00, #009b3c, #006cb9, #842288);
+}
+
+.publicaciones-item .icon {
+	fill: #fff;
+	height: 100%;
+	margin: 6vh 0 0 0;
+}
+
+.publicaciones-item .icon-container:hover, .publicaciones-item .icon-container:focus-visible {
+	animation: left-right 1.3s linear infinite;
+}
+
+.publicaciones-item:last-child {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.publicaciones-slide::-webkit-scrollbar {
+	height: 6px;
+}
+
+.publicaciones-slide::-webkit-scrollbar-track {
+	background: #004361;
+}
+
+.publicaciones-slide::-webkit-scrollbar-thumb {
+	background: #77c5ea;
+}
+
+.publicaciones-slide::-webkit-scrollbar-thumb:hover {
+	background: #529dc1;
+}
+
+@keyframes left-right {
+	0%, 100% {
+	  transform: translateX(0);
+	}
+	50% {
+	  transform: translateX(5px);
+	}
 }
 
 .post-card {
