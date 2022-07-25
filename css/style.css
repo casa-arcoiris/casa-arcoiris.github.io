@@ -7,7 +7,7 @@
 			box-sizing: border-box;
 }
 
-:focus, .header_link_logo:focus-visible, .lgbtq:focus-visible, .jovenes:focus-visible, .referencias > a:focus-visible, .feeling_card:focus-visible, .switch:focus-visible, footer a:focus-visible, .same_page_link:focus-visible, .field:focus-visible, .publicaciones-item .icon-container:focus-visible {
+:focus, .header_link_logo:focus-visible, .lgbtq:focus-visible, .jovenes:focus-visible, .referencias > a:focus-visible, .feeling_card:focus-visible, .switch:focus-visible, footer a:focus-visible, .same_page_link:focus-visible, .field:focus-visible, .publicaciones-item .icon-container:focus-visible, .back-to-posts:focus-visible {
 	outline: none;
 	padding: 0;
 }
@@ -192,7 +192,7 @@ header ul li a:hover {
 	transition: all 0.5s;
 }
 
-header ul li a:hover, header ul li a:focus {
+header ul li a:hover, header ul li a:focus, .back-to-posts:hover p, .back-to-posts:focus-visible p {
 	background-size: 100% 2px;
 	outline: none;
 	padding: 0;
@@ -711,7 +711,7 @@ footer > p {
 }
 
 .publicaciones-item .icon-container:hover, .publicaciones-item .icon-container:focus-visible {
-	animation: left-right 1.3s linear infinite;
+	animation: right-left 1.3s linear infinite;
 }
 
 .publicaciones-item:last-child {
@@ -736,12 +736,21 @@ footer > p {
 	background: #529dc1;
 }
 
-@keyframes left-right {
+@keyframes right-left {
 	0%, 100% {
 	  transform: translateX(0);
 	}
 	50% {
 	  transform: translateX(5px);
+	}
+}
+
+@keyframes left-right {
+	0%, 100% {
+	  transform: translateX(0);
+	}
+	50% {
+	  transform: translateX(-5px);
 	}
 }
 
@@ -1134,6 +1143,35 @@ body.dark .post-card.jovenes:hover, .post-card.jovenes:hover, body.dark .post-ca
 
 .header_trans.action, .header_bisexual.action, .header_gay.action, .header_aromantic.action {
 	animation: HeaderRainbowMove 1s linear;
+}
+
+.back-to-posts {
+	width: fit-content;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin: -2% 0 2.5% 0;
+	font-size: 10pt;
+	border-radius: 1em;
+	color: #626262;
+}
+
+.back-to-posts svg {
+	height: 10pt;
+	margin: 0 1vh 0 0;
+	fill: #7b7b7b;
+}
+
+.back-to-posts:hover svg, .back-to-posts:focus-visible svg {
+	animation: left-right 1.3s linear infinite;
+}
+
+.back-to-posts p {
+	background-image: linear-gradient(currentColor, currentColor);
+	background-position: 0% 100%;
+	background-repeat: no-repeat;
+	background-size: 0% 2px;
+	transition: background-size .3s;
 }
 
 .post_text {
