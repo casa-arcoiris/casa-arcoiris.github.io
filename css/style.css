@@ -931,7 +931,7 @@ body.dark .post-card.jovenes:hover, .post-card.jovenes:hover, body.dark .post-ca
 	opacity: 1;
 }
 
-.post-card.trans, .post-card.bisexual, .post-card.gay, .post-card.aromantic {
+.post-card.trans, .post-card.bisexual, .post-card.gay, .post-card.aromantic, .post-card.pansexual {
 	background-image: url(../assets/trans_flag.jpg);
 	background-size: 100% 25.5vh;
 	color: #000;
@@ -950,6 +950,10 @@ body.dark .post-card.jovenes:hover, .post-card.jovenes:hover, body.dark .post-ca
 
 .post-card.aromantic {
 	background-image: url(../assets/aromantic_flag.jpg);
+}
+
+.post-card.pansexual {
+	background-image: url(../assets/pansexual_flag.webp);
 }
 
 .post-title h1 {
@@ -1036,6 +1040,17 @@ body.dark .post-card.jovenes:hover, .post-card.jovenes:hover, body.dark .post-ca
 	background-repeat: no-repeat;
 }
 
+.pansexual_post-bg {
+	background-image: url(../assets/pansexual_flag.webp);
+	height: 95vh;
+	width: 100vw;
+	margin: -4em 0 0 0;
+	background-size: 100% 100%;
+	z-index: -1;
+	position: fixed;
+	background-repeat: no-repeat;
+}
+
 .header_rainbow {
 	height: 100%;
 	width: 150%;
@@ -1106,7 +1121,7 @@ body.dark .post-card.jovenes:hover, .post-card.jovenes:hover, body.dark .post-ca
 	}
 }
 
-.header_trans, .header_bisexual, .header_gay, .header_aromantic {
+.header_trans, .header_bisexual, .header_gay, .header_aromantic, .header_pansexual {
 	height: 100%;
 	width: 150%;
 	z-index: -1;
@@ -1141,7 +1156,13 @@ body.dark .post-card.jovenes:hover, .post-card.jovenes:hover, body.dark .post-ca
 	background-repeat: no-repeat;
 }
 
-.header_trans.action, .header_bisexual.action, .header_gay.action, .header_aromantic.action {
+.header_pansexual {
+	background: url('../assets/opacity_25.png'), url('../assets/pansexual_flag.webp');
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.header_trans.action, .header_bisexual.action, .header_gay.action, .header_aromantic.action, .header_pansexual.action {
 	animation: HeaderRainbowMove 1s linear;
 }
 
@@ -1331,7 +1352,7 @@ a.jovenes_link:hover::after, div.jovenes_link > a:hover::after, a.jovenes_link:f
 	background: var(--clr-bg);
 }
 
-.categoria_post.trans, .categoria_post.bisexual, .categoria_post.gay, .categoria_post.aromantic {
+.categoria_post.trans, .categoria_post.bisexual, .categoria_post.gay, .categoria_post.aromantic, .categoria_post.pansexual {
 	font-weight: bold;
 	color: #000;
 	background-repeat: no-repeat;
@@ -1352,6 +1373,11 @@ a.jovenes_link:hover::after, div.jovenes_link > a:hover::after, a.jovenes_link:f
 
 .categoria_post.aromantic {
 	background-image: url(../assets/aromantic_flag.jpg);
+	background-size: 101% 100%;
+}
+
+.categoria_post.pansexual {
+	background: url(../assets/pansexual_flag.webp);
 	background-size: 101% 100%;
 }
 
