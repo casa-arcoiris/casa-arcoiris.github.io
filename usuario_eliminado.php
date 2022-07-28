@@ -1,10 +1,20 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>	
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-3B6TNMJMS1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'G-3B6TNMJMS1');
+	</script>
+
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Publicaciones no lanzadas | Casa Arcoíris</title>
-	<link rel="stylesheet" href="css/style.css">
+	<title>Usuario eliminado | Casa Arcoíris</title>
+	<link rel="stylesheet" href="https://www.casa-arcoiris.org/css/style.css">
 	<script src="https://www.casa-arcoiris.org/js/main.js"></script>
 	<link rel="shortcut icon" href="https://www.casa-arcoiris.org/assets/favicon.png" type="image/x-icon">
 	<link rel="apple-touch-icon" href="https://www.casa-arcoiris.org/assets/favicon.png">
@@ -70,42 +80,12 @@
 
 	<div class="space"></div>
 
-	<h1 class="div_text">Publicaciones no lanzadas</h1>
+	<div class="error_404">
+		<h1>Usuario eliminado</h1>
+		<p class="error_404-p">¡Ups! Parece que ese usuario no existe o ya se dio de baja de nuestro boletín de noticias.</p>
 
-	<div class="filter_posts">
-		<p id="openFilterBtn" tabindex="0" onclick="openFilter()">Filtrar <svg xmlns="http://www.w3.org/2000/svg" class="filter_icon" viewBox="0 0 512 512"><path d="M3.853 54.87C10.47 40.9 24.54 32 40 32H472C487.5 32 501.5 40.9 508.1 54.87C514.8 68.84 512.7 85.37 502.1 97.33L320 320.9V448C320 460.1 313.2 471.2 302.3 476.6C291.5 482 278.5 480.9 268.8 473.6L204.8 425.6C196.7 419.6 192 410.1 192 400V320.9L9.042 97.33C-.745 85.37-2.765 68.84 3.854 54.87L3.853 54.87z"/></svg></p>
-
-		<ul id="filter_list" class="filter_list">
-			<li tabindex="0" class="filterListElements" onclick="filterContent('jovenes')">Ver sólo categoría de "Jóvenes"</li>
-			<li tabindex="0" class="filterListElements" onclick="filterContent('lgbtq')">Ver sólo categoría de "LGBTQ+"</li>
-			<li tabindex="0" class="filterListElements" onclick="resetFilteredContent()">Ver todas las categorías</li>
-		</ul>
-
-		<p id="clearFiltersBtn" tabindex="0" class="hide" onclick="resetFilteredContent(1)"> <svg xmlns="http://www.w3.org/2000/svg" class="clear_filters_icon" viewBox="0 0 512 512"><path d="M0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256zM175 208.1L222.1 255.1L175 303C165.7 312.4 165.7 327.6 175 336.1C184.4 346.3 199.6 346.3 208.1 336.1L255.1 289.9L303 336.1C312.4 346.3 327.6 346.3 336.1 336.1C346.3 327.6 346.3 312.4 336.1 303L289.9 255.1L336.1 208.1C346.3 199.6 346.3 184.4 336.1 175C327.6 165.7 312.4 165.7 303 175L255.1 222.1L208.1 175C199.6 165.7 184.4 165.7 175 175C165.7 184.4 165.7 199.6 175 208.1V208.1z"/></svg>Restaurar filtros</p>
-	</div>
-
-	
-
-	<div class="centered_content post-container" id="filteredList">
-
-		
-
-		<div class="post-card_container draw">
-			<a href="https://www.casa-arcoiris.org/publicaciones/lgbtq/arromanticismo.php" class="post-card aromantic lgbtq">
-				<p>¿Arromanticismo?</p>
-			</a>
-			<a href="https://www.casa-arcoiris.org/publicaciones/lgbtq/arromanticismo.php" class="go_to_post-btn">Ver publicación</a>
-			<p class="post_description">¿Alguna vez has escuchado a una persona decir que es arromántica pero no sabes qué quiere decir? ¡Aquí te aclaramos algunas dudas!</p>
-			<div class="categorias_post categorias_post-cards">
-				<div class="categoria_post lgbtq categoria_post-card">LGBTQ+</div>
-				<div class="categoria_post aromantic categoria_post-card">Arromanticismo</div>
-			</div>
-			<div class="published card">
-				<svg class="clock_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z"/></svg>
-				<p>??/??/2022</p>
-			</div>
-		</div>
-		
+		<p>¿Quieres regresar a la página de inicio?</p>
+		<a href="https://www.casa-arcoiris.org" class="btn-back_to_index">Regresar a inicio</a>
 	</div>
 
 	<footer>

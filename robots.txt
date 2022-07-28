@@ -1,6 +1,7 @@
 User-agent: *
-Disallow: 
+Disallow: usuario_eliminado.php
 Disallow: no_lanzadas.html
 Disallow: no_revisadas.html
+Disallow: no_revisadas.php
 Disallow: 404.html
 Sitemap: https://www.casa-arcoiris.org/sitemap.xml
