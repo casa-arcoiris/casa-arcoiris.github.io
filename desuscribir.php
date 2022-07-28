@@ -1,5 +1,15 @@
 <?php 
 require 'php_config/config.php';
+
+$email = mysqli_real_escape_string($conex, $_GET['email']);
+
+$verificar_correo = mysqli_query($conex, "SELECT * from users where email = '$email' ");
+
+if(mysqli_num_rows($verificar_correo) == 0 or !$email){
+	header('Location: usuario_eliminado.php');
+	die();
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -86,7 +96,7 @@ require 'php_config/config.php';
 			<div class="form-inner">
 				<form action="" class="" method="post">
 					<div class="fields_container">
-						<p class="confirm_email"><?php $email = $_GET['email']; echo $email ?></p>
+						<p class="confirm_email"><?php echo $email;	 ?></p>
 						<div class="field vl">
 							<input type="hidden" name="compare_email" value="<?php echo $email;?>" required>
 						</div>
