@@ -123,6 +123,8 @@
 
 				<p>El autor de la bandera la subió a Tumblr en junio de 2020. Su nombre es desconocido, sin embargo, su nombre de usuario en Tumblr es <a onclick="goToSection('gayflagblog')" onkeydown="goToSection('gayflagblog')" class="same_page_link" tabindex="0">GayFlagBlog</a>.</p>
 
+				<p>Te invitamos a leer nuestra publicación <a target="_blank" href="https://www.casa-arcoiris.org/publicaciones/lgbtq/gay.php" class="same_page_link">¿Gay?</a> para obtener más información acerca de los hombres gays.</p>
+
 				<h2>Bisexual</h2>
 
 				<img itemprop="image" class="banderas_post" src="https://www.casa-arcoiris.org/assets/bisexual_flag.png" alt="Bandera bisexual">

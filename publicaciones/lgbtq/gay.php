@@ -116,23 +116,21 @@
 
 				<p>En las relaciones gays hay dos hombres. Ninguno es mujer. Si un hombre es más afeminado que el estereotipo, no es ni más ni menos hombre, tampoco se convierte en "la mujer de la relación".</p>
 
-				<h2>¿Cómo tienen relaciones sexuales los gays?</h2>
+				<h2><i>"Lo gay se contagia"</i></h2>
 
-				<p>En caso de que los hombres gays quieran tener relaciones sexuales, tienen la posibilidad de hacerlo, ya sea de forma anal u oral.</p>
+				<p>No. La orientación sexual no se puede "contagiar", ya que no es una enfermedad. Las personas que se identifican como homosexuales no pueden hacer que personas heterosexuales cambien su orientación sexual.</p>
 
-				<h2>¿Qué es ser activo, pasivo y versátil?</h2>
+				<h2><i>"Las personas homosexuales pueden dejar de serlo"</i></h2>
 
-				<p>"Activo", "pasivo" y "versátil" son los roles sexuales que existen en el sexo gay. Se les denomina "activos" a los hombres que van a penetrar, "pasivos" a los que van a ser penetrados, y "versátiles" a los que pueden disfrutar de ambos roles, siendo activos o pasivos.</p>
+				<p>No. La orientación sexual no se puede cambiar. A pesar de que hay personas que creen que con ayuda psicológica se puede "convertir" a una persona en heterosexual, esto es falso.</p>
 
-				<h2>¿Cuáles son las recomendaciones para tener relaciones sexuales?</h2>
+				<h2>¿Todos los hombres gays tienen problemas con sus papás?</h2>
 
-				<p>Se recomienda abastecerse de condones, usar lubricante a base de agua en caso de tener sexo anal y que el pasivo se haga una limpieza anal.</p>
+				<p>Los problemas familiares no influyen en la orientación sexual. Si un hombre tiene problemas con su papá, no significa que sea gay. De la misma manera, que un hombre no tenga problemas con su papá, no significa que sea heterosexual.</p>
 
-				<p>De igual manera, en la parte de abajo te dejaremos recursos para más información y recomendaciones.</p>
+				<h2><i>"Los hombres gays tienen un sentido especial para la moda"</i></h2>
 
-				<h2>¿Puedo preguntar cuál es el rol sexual de una persona?</h2>
-
-				<p>La respuesta es no. Preguntar el rol sexual de una persona es algo muy íntimo, invasivo e indiscreto, por lo que lo mejor es no preguntarlo.</p>
+				<p>La orientación sexual no influye en el sentido de la moda. Un hombre heterosexual puede estar interesado en la moda y un hombre gay puede no estarlo.</p>
 			</span>
 
 			<div class="referencias">
@@ -140,14 +138,6 @@
 
 				<a target="_blank" href="https://es.wikipedia.org/wiki/Identidad_de_género">https://es.wikipedia.org/wiki/Identidad_de_género</a>
 				<a target="_blank" href="https://gayflagblog.tumblr.com/post/186181118619/gay-man-flag-russian-росси-я-portuguese">https://gayflagblog.tumblr.com/post/186181118619/gay-man-flag-russian-росси-я-portuguese</a>
-				<a target="_blank" href="https://es.wikipedia.org/wiki/Activo,_pasivo_y_versátil">https://es.wikipedia.org/wiki/Activo,_pasivo_y_versátil</a>
-			</div>
-
-			<div class="referencias recursos">
-				<h3>Recursos: </h3>
-
-				<a target="_blank" href="https://www.sico.com.mx/blogs/articulos/mas-que-un-bromance">https://www.sico.com.mx/blogs/articulos/mas-que-un-bromance</a>
-				<a target="_blank" href="https://youtu.be/tb0DhzPAjJE">Video: ¿COMO TENER LA PRIMERA VEZ GAY/LÉSBICA? - TUTORIAL RELACIONES</a>
 			</div>
 			
 			<h3 class="categorias_h3">Categorías</h3>

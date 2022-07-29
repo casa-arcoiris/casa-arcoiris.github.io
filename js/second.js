@@ -254,3 +254,7 @@ function writeOnSubscribtion(text, add_class) {
 if (window.screen.width <= 319 && recaptcha) {
 	recaptcha.setAttribute("data-size", "compact");
 }
+
+if (window.history.replaceState) {
+	window.history.replaceState(null, null, window.location.href);
+}
