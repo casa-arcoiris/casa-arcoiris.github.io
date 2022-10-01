@@ -109,7 +109,7 @@
 
 				<h2>Lésbica</h2>
 
-				<img itemprop="image" class="banderas_post" src="https://www.casa-arcoiris.org/assets/lesbian_flag.webp" alt="Bandera representando a la comunidad de mujeres lesbianas">
+				<img itemprop="image" class="banderas_post" src="https://www.casa-arcoiris.org/assets/lesbian_flag.jpg" alt="Bandera representando a la comunidad de mujeres lesbianas">
 				<p class="post_image-small banderas_post">Bandera representando a la comunidad de mujeres lesbianas</p>
 
 				<p>Esta bandera representa a la comunidad de mujeres lesbianas. Han existido muchas versiones de la bandera, sin embargo, esta es la más conocida. La bandera tiene distintas tonalidades de rosa y contiene una franja blanca en el medio.</p>
@@ -149,7 +149,7 @@
 
 				<h2 id="no_binario">No binario</h2>
 
-				<img itemprop="image" class="banderas_post" src="https://www.casa-arcoiris.org/assets/non-binary_flag.webp" alt="Bandera representando a la comunidad de personas no binarias">
+				<img itemprop="image" class="banderas_post" src="https://www.casa-arcoiris.org/assets/non-binary_flag.jpg" alt="Bandera representando a la comunidad de personas no binarias">
 				<p class="post_image-small banderas_post">Bandera representando a la comunidad de personas no binarias</p>
 
 				<p>Esta bandera representa a la comunidad de personas no binarias. La bandera tiene 4 colores: amarillo, blanco, morado y negro. La bandera utiliza colores que no están relacionados con ningún género.</p>
@@ -158,7 +158,7 @@
 
 				<h2>Intersexual</h2>
 
-				<img itemprop="image" class="banderas_post" src="https://www.casa-arcoiris.org/assets/intersex_flag.webp" alt="Bandera representando a la comunidad de personas intersexuales">
+				<img itemprop="image" class="banderas_post" src="https://www.casa-arcoiris.org/assets/intersex_flag.jpg" alt="Bandera representando a la comunidad de personas intersexuales">
 				<p class="post_image-small banderas_post">Bandera representando a la comunidad de personas intersexuales</p>
 
 				<p>Esta bandera representa a la comunidad de personas intersexuales. La bandera es de color amarillo y tiene un cículo de color morado que simboliza la totalidad. Al igual que la <a onclick="goToSection('no_binario')" onkeydown="goToSection('no_binario')" class="same_page_link" tabindex="0">bandera no binaria</a>, la bandera intersexual contiene colores que no están relacionados con ningún género.</p>
@@ -167,7 +167,7 @@
 
 				<h2>Asexual</h2>
 
-				<img itemprop="image" class="banderas_post" src="https://www.casa-arcoiris.org/assets/asexual_flag.webp" alt="Bandera representando a la comunidad de personas asexuales">
+				<img itemprop="image" class="banderas_post" src="https://www.casa-arcoiris.org/assets/asexual_flag.jpg" alt="Bandera representando a la comunidad de personas asexuales">
 				<p class="post_image-small banderas_post">Bandera representando a la comunidad de personas asexuales</p>
 
 				<p>Esta bandera representa a la comunidad de personas asexuales. La bandera tiene 4 colores: negro, gris, blanco y morado.</p>
@@ -185,7 +185,7 @@
 
 				<h2>Pansexual</h2>
 
-				<img itemprop="image" class="banderas_post" src="https://www.casa-arcoiris.org/assets/pansexual_flag.webp" alt="Bandera representando a la comunidad de personas pansexuales">
+				<img itemprop="image" class="banderas_post" src="https://www.casa-arcoiris.org/assets/pansexual_flag.jpg" alt="Bandera representando a la comunidad de personas pansexuales">
 				<p class="post_image-small banderas_post">Bandera representando a la comunidad de personas pansexuales</p>
 
 				<p>Esta bandera representa a la comunidad de personas pansexuales. La bandera tiene 3 colores: magenta, amarillo y cian.</p>
