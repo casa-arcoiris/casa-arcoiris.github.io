@@ -145,7 +145,7 @@
 
 				<p>Fue creada por Monica Helms en 1999. Su debut fue en Phoenix, Arizona.</p>
 
-				<p>Te invitamos a leer nuestra publicación <a target="_blank" href="https://www.casa-arcoiris.org/publicaciones/lgbtq/transgenero.html" class="same_page_link">¿Transgénero?</a> para obtener más información acerca de las personas trans.</p>
+				<p>Te invitamos a leer nuestra publicación <a target="_blank" href="https://www.casa-arcoiris.org/publicaciones/lgbtq/transgenero.php" class="same_page_link">¿Transgénero?</a> para obtener más información acerca de las personas trans.</p>
 
 				<h2 id="no_binario">No binario</h2>
 

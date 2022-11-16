@@ -226,10 +226,10 @@
 		</div>
 
 		<div class="post-card_container draw">
-			<a href="https://www.casa-arcoiris.org/publicaciones/lgbtq/transgenero.html" class="post-card trans lgbtq">
+			<a href="https://www.casa-arcoiris.org/publicaciones/lgbtq/transgenero.php" class="post-card trans lgbtq">
 				<p>¿Transgénero?</p>
 			</a>
-			<a href="https://www.casa-arcoiris.org/publicaciones/lgbtq/transgenero.html" class="go_to_post-btn">Ver publicación</a>
+			<a href="https://www.casa-arcoiris.org/publicaciones/lgbtq/transgenero.php" class="go_to_post-btn">Ver publicación</a>
 			<p class="post_description">Si has visto la marcha de la comunidad LGBTQ+, te podrás haber dado cuenta de la palabra "Transgénero", pero ¿Qué significa esta palabra?</p>
 			<div class="categorias_post categorias_post-cards">
 				<div class="categoria_post lgbtq categoria_post-card">LGBTQ+</div>

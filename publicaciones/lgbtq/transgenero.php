@@ -20,7 +20,6 @@
 	<script src="https://www.casa-arcoiris.org/js/main.js"></script>
 	<link rel="shortcut icon" href="https://www.casa-arcoiris.org/assets/favicon.png" type="image/x-icon">
 	<link rel="apple-touch-icon" href="https://www.casa-arcoiris.org/assets/favicon.png">
-	<meta http-equiv="refresh" content="0; url=https://www.casa-arcoiris.org/publicaciones/lgbtq/transgenero.php" />
 </head>
 <body>
 	<div class="trans_post-bg" id="post_background"></div>
