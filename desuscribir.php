@@ -36,7 +36,7 @@ if(mysqli_num_rows($verificar_correo) == 0 or !$email){
 		</svg>
 		<ul id="menu" class="menu_list">
 			<li><a href="https://www.casa-arcoiris.org">Inicio</a></li>
-			<li><a href="https://www.casa-arcoiris.org/publicaciones.html">Publicaciones</a></li>
+			<li><a href="https://www.casa-arcoiris.org/publicaciones.php">Publicaciones</a></li>
 			<button class="switch" id="switch">
 				<span>
 
@@ -60,7 +60,7 @@ if(mysqli_num_rows($verificar_correo) == 0 or !$email){
 		</ul>
 		<ul id="menu_list-no_mobile" class="menu_list-no_mobile">
 			<li><a href="https://www.casa-arcoiris.org">Inicio</a></li>
-			<li><a href="https://www.casa-arcoiris.org/publicaciones.html">Publicaciones</a></li>
+			<li><a href="https://www.casa-arcoiris.org/publicaciones.php">Publicaciones</a></li>
 			<button class="switch" id="switch-no_mobile">
 				<span>
 

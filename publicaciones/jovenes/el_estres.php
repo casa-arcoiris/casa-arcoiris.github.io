@@ -159,7 +159,7 @@
 
                 <p>El estrés y el miedo sí están vinculados, ya que el estrés es una respuesta del cuerpo y mente ante situaciones que de alguna manera nos representan algún peligro, y el miedo aparece cuando creemos que vamos a sufrir daño.</p>
 
-                <p>Te invitamos a leer nuestra publicación <a target="_blank" href="https://www.casa-arcoiris.org/publicaciones/jovenes/emocionario.html" class="same_page_link jovenes_link">Emocionario</a> para obtener más información acerca de las emociones.</p>
+                <p>Te invitamos a leer nuestra publicación <a target="_blank" href="https://www.casa-arcoiris.org/publicaciones/jovenes/emocionario.php" class="same_page_link jovenes_link">Emocionario</a> para obtener más información acerca de las emociones.</p>
 
                 <h2>¿Se puede vivir sin estresarse nunca?</h2>
 
