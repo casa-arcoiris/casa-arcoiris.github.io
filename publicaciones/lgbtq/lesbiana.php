@@ -1,3 +1,7 @@
+<!-- <?php 
+// require '../../php_config/config.php';
+// ?> -->
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -10,20 +14,22 @@
 
 	  gtag('config', 'G-3B6TNMJMS1');
 	</script>
-
+	
 	<meta charset="UTF-8">
-	<meta name="description" content="Casa Arcoíris es un blog con el objetivo de ayudar a jóvenes que forman parte de la comunidad LGBTQ+.">
-	<meta name="keywords" content="casa, arcoíris, comunidad, lgbtq, nuestro, objetivo, inicio, casa arcoíris, nuestro objetivo, comunidad lgbtq">
+	<meta name="description" content="¿Alguna vez has oído que una mujer dice que es 'lesbiana'? ¿Sabes lo que significa? ¿Es una etapa? ¿Es una confusión? ¡Aquí te decimos!">
+	<meta name="keywords" content="casa, arcoíris, comunidad, lgbtq, nuestro, objetivo, inicio, casa arcoíris, nuestro objetivo, comunidad lgbtq, lesbiana, mujeres lesbianas, bandera representando a la comunidad de mujeres lesbianas">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Inicio | Casa Arcoíris</title>
-	<link rel="stylesheet" href="https://www.casa-arcoiris.org/css/style.css">
+	<title>¿Lesbiana? | Casa Arcoíris</title>
+	<link rel="stylesheet" href="../../css/style.css">
 	<script src="https://www.casa-arcoiris.org/js/main.js"></script>
 	<link rel="shortcut icon" href="https://www.casa-arcoiris.org/assets/favicon.png" type="image/x-icon">
 	<link rel="apple-touch-icon" href="https://www.casa-arcoiris.org/assets/favicon.png">
 </head>
 <body>
+	<div class="lesbian_post-bg" id="post_background"></div>
 
 	<header>
+		<div class="header_lesbian" id="header_moving_right"></div>
 		<a class="header_link_logo" href="https://www.casa-arcoiris.org"><img src="https://www.casa-arcoiris.org/assets/casa_arcoiris_logo.png" class="header_logo" alt="Logo de Casa Arcoíris"></a>
 		<svg tabindex="0" onclick="menu_f()" id="menu_icon" class="menu_icon" viewBox="0 0 100 80" width="40" height="40">
   			<rect y="0" width="100" height="20" rx="8"></rect>
@@ -80,83 +86,82 @@
 		</ul>
 	</header>
 
-	<div class="extra_space"></div>
+	<div class="space"></div>
 
-	<div class="div_text">
-		<h1 class="inicio">Inicio</h1>
+	<div itemscope itemtype="http://schema.org/Article" class="post-bg">
+		
+        <a href="https://www.casa-arcoiris.org/publicaciones.php" class="back-to-posts"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M447.1 256C447.1 273.7 433.7 288 416 288H109.3l105.4 105.4c12.5 12.5 12.5 32.75 0 45.25C208.4 444.9 200.2 448 192 448s-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25l160-160c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25L109.3 224H416C433.7 224 447.1 238.3 447.1 256z"/></svg> <p>Volver a las publicaciones</p></a>
 
-		<p>¡Hola! Te damos la bienvenida a nuestro blog "Casa Arcoíris". Esperamos que tu visita sea agradable y cómoda.</p>
+		<div class="post_text">
+			<h1 itemprop="name">¿Lesbiana?</h1>
 
-		<div class="center_image_index">
-			<img src="https://www.casa-arcoiris.org/assets/casa_arcoiris_logo.png" alt="Logo de Casa Arcoíris" class="images fondo" id="imagen1" oncontextmenu="return false;" draggable="false" ondragstart="return false;">
-		</div>
+			<p>¿Alguna vez has oído que una mujer dice que es "lesbiana"? ¿Sabes lo que significa? ¿Es una etapa? ¿Es una confusión? ¡Aquí te decimos!</p>
 
-		<h2 class="inicio">Objetivo</h2>
+			<img itemprop="image" class="post_image" src="https://www.casa-arcoiris.org/assets/lesbian_flag.jpg" alt="Bandera representando a la comunidad de mujeres lesbianas">
+			<p class="post_image-small">Bandera representando a la comunidad de mujeres lesbianas</p>
 
-		<p>¿Cuál es nuestro objetivo? Nuestro objetivo es ayudar a jóvenes que forman parte de la comunidad LGBTQ+, brindándoles herramientas para que puedan autodescubrirse más fácilmente, identificar sus emociones, saber más sobre la comunidad LGBTQ+, etc.</p>
+			<span itemprop="articleBody">
 
-		<div class="center_image_index">
-			<img class="lgbtq_heart reveal-text" id="lgbtq_heart" src="https://www.casa-arcoiris.org/assets/lgbtq_heart.png" alt="Corazón con colores arcoíris" oncontextmenu="return false;" draggable="false" ondragstart="return false;">
-		</div>
+				<h2>¿Qué es ser lesbiana?</h2>
 
-		<h2 class="inicio">Nuestras publicaciones</h2>
+				<p>Una mujer lesbiana es alguien que siente atracción romántica o sexual hacia otras mujeres.</p>
 
-		<p>Aquí te mostramos algunas de nuestras publicaciones</p>
+				<h2><i>Las lesbianas odian a los hombres</i></h2>
 
-		<div class="post-container publicaciones-slide">
+				<p></p>
 
-			<div class="publicaciones-item">
-				<p>Para ver todas nuestras publicaciones da click</p>
-				<a href="https://www.casa-arcoiris.org/publicaciones.php" class="go_to_post-btn">Aquí</a>
-			</div>
+				<h2><i>Son lesbianas porque no han estado con un hombre</i></h2>
+				<h2><i>Las mujeres guapas no pueden ser lesbianas</i></h2>
+				<h2>¿Quién es el hombre en una relación lésbica?</h2>
+				<h2>¿Todas las lesbianas se conocen entre sí?</h2>
+				<h2>¿A todas las lesbianas les gustan todos los deportes?</h2>
+				<h2>¿A todas las lesbianas les gustan los gatos?</h2>
+				<h2><i>Las mujeres lesbianas son más masculinas que las mujeres heterosexuales</i></h2>
 
-			<div class="post-card_container draw">
-				<a href="https://www.casa-arcoiris.org/publicaciones/jovenes/la_ansiedad.php" class="post-card jovenes">
-					<p>La ansiedad</p>
-				</a>
-				<a href="https://www.casa-arcoiris.org/publicaciones/jovenes/la_ansiedad.php" class="go_to_post-btn">Ver publicación</a>
-			</div>
+				<p>La masculinidad o feminidad no tiene que ver con la orientación sexual o con la identidad de género. El ser una persona "masculina" o "femenina" es un tipo de expresión de género.</p>
 
-			<div class="post-card_container draw">
-				<a href="https://www.casa-arcoiris.org/publicaciones/lgbtq/salir_del_closet.php" class="post-card lgbtq">
-					<p>Salir del clóset</p>
-				</a>
-				<a href="https://www.casa-arcoiris.org/publicaciones/lgbtq/salir_del_closet.php" class="go_to_post-btn">Ver publicación</a>
-			</div>
+			</span>
 
-			<div class="post-card_container draw">
-				<a href="https://www.casa-arcoiris.org/publicaciones/jovenes/el_estres.php" class="post-card jovenes">
-					<p>El estrés</p>
-				</a>
-				<a href="https://www.casa-arcoiris.org/publicaciones/jovenes/el_estres.php" class="go_to_post-btn">Ver publicación</a>
+			<div class="referencias">
+				<h3>Referencias: </h3>
+
+				<a href="" target="_blank"></a>
+				<a href="" target="_blank"></a>
+				<a href="" target="_blank"></a>
 			</div>
 			
-			<div class="post-card_container draw">
-				<a href="https://www.casa-arcoiris.org/publicaciones/lgbtq/las_banderas.php" class="post-card lgbtq">
-					<p>Las banderas</p>
-				</a>
-				<a href="https://www.casa-arcoiris.org/publicaciones/lgbtq/las_banderas.php" class="go_to_post-btn">Ver publicación</a>
-			</div>
-
-			<div class="post-card_container draw">
-				<a href="https://www.casa-arcoiris.org/publicaciones/jovenes/emocionario.php" class="post-card jovenes">
-					<p>Emocionario</p>
-				</a>
-				<a href="https://www.casa-arcoiris.org/publicaciones/jovenes/emocionario.php" class="go_to_post-btn">Ver publicación</a>
-			</div>
-
-			<div class="post-card_container draw">
-				<a href="https://www.casa-arcoiris.org/publicaciones/lgbtq/las_siglas.php" class="post-card lgbtq">
-					<p>Las siglas</p>
-				</a>
-				<a href="https://www.casa-arcoiris.org/publicaciones/lgbtq/las_siglas.php" class="go_to_post-btn">Ver publicación</a>
-			</div>
-
-			<div class="publicaciones-item">
-				<p>Ver más publicaciones</p>
-				<a href="https://www.casa-arcoiris.org/publicaciones.php" class="icon-container" tabindex="0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon"><path d="M256 0C114.6 0 0 114.6 0 256c0 141.4 114.6 256 256 256s256-114.6 256-256C512 114.6 397.4 0 256 0zM406.6 278.6l-103.1 103.1c-12.5 12.5-32.75 12.5-45.25 0s-12.5-32.75 0-45.25L306.8 288H128C110.3 288 96 273.7 96 256s14.31-32 32-32h178.8l-49.38-49.38c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l103.1 103.1C414.6 241.3 416 251.1 416 256C416 260.9 414.6 270.7 406.6 278.6z"/></svg></a>
+			<h3 class="categorias_h3">Categorías</h3>
+			<div class="categorias_post">
+				<div class="categoria_post lgbtq">LGBTQ+</div>
+				<div class="categoria_post lesbian">Lesbiana</div>
 			</div>
 		</div>
+
+		
+		<div class="published">
+			<svg class="clock_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z"/></svg>
+			<p>Publicado el <span itemprop="datePublished" content="2022-08-??">??/08/2022</span></p>
+		</div>
+
+	</div>
+
+	<div class="subscribe_news" id="subscribe_news">
+		<p>¿Quieres saber cuando subamos una nueva publicación? ¡Suscríbete a nuestro boletín de noticias!</p>
+		<form action="" method="post">
+			<div class="fields_container">
+				<div class="field">
+					<input type="text" name="name" placeholder="Nombre" title="Nombre" required>
+				</div>
+				<div class="field">
+					<input type="text" name="email" placeholder="Correo" title="Correo" required>
+				</div>
+				<div id="recaptcha" data-sitekey="6LeeM6EgAAAAAB3kmI47hig8I5gOFEDjeqU5-xI9" SameSite="secure" class="g-recaptcha"></div>
+				<p id="p_advertisement" class="wrong_log"></p>
+				<div class="field">
+					<input name="subscribe" type="submit" value="Suscribirse">
+				</div>
+			</div>
+		</form>
 	</div>
 
 	<footer>
@@ -170,5 +175,8 @@
 
 	<script src="https://www.casa-arcoiris.org/js/second.js"></script>
 	<script src="https://www.casa-arcoiris.org/js/dark-mode.js"></script>
+	<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit&hl={{app.request.locale|default(defaultLang) }}" async defer></script>
+
+	<?php include('../../php_config/subscribe_form.php'); ?>
 </body>
 </html>

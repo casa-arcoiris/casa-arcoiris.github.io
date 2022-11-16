@@ -105,7 +105,7 @@
 
 				<p>Fue creada por Gilbert Baker en 1978 para la Marcha del Orgullo LGBT+ de San Francisco.</p>
 
-				<p>Te invitamos a leer nuestra publicación <a target="_blank" href="https://www.casa-arcoiris.org/publicaciones/lgbtq/las_siglas.html" class="same_page_link">Las siglas</a> para obtener más información acerca de las siglas de la comunidad LGBTQ+.</p>
+				<p>Te invitamos a leer nuestra publicación <a target="_blank" href="https://www.casa-arcoiris.org/publicaciones/lgbtq/las_siglas.php" class="same_page_link">Las siglas</a> para obtener más información acerca de las siglas de la comunidad LGBTQ+.</p>
 
 				<h2>Lésbica</h2>
 
